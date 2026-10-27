@@ -1,0 +1,750 @@
+<!doctype html >
+<!--[if IE 8]>    <html class="ie8" lang="en"> <![endif]-->
+<!--[if IE 9]>    <html class="ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en-US"> <!--<![endif]-->
+<head>
+    <title>What is Linux? - Linux.com</title>
+    <meta charset="UTF-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={licenseKey:"981d6c8a9f",applicationID:"176909146",browserID:"194441354"};;/*! For license information please see nr-loader-rum-1.324.0.min.js.LICENSE.txt */
+(()=>{var e={8122(e,t,r){"use strict";r.d(t,{a:()=>i});var n=r(944);function i(e,t){try{if(!e||"object"!=typeof e)return(0,n.R)(3);if(!t||"object"!=typeof t)return(0,n.R)(4);const r=Object.create(Object.getPrototypeOf(t),Object.getOwnPropertyDescriptors(t)),a=0===Object.keys(r).length?e:r;for(let s in a)if(void 0!==e[s])try{if(null===e[s]){r[s]=null;continue}Array.isArray(e[s])&&Array.isArray(t[s])?r[s]=Array.from(new Set([...e[s],...t[s]])):e[s]instanceof Map||e[s]instanceof Set||e[s]instanceof Date||e[s]instanceof RegExp?r[s]=e[s]:"object"==typeof e[s]&&null!==t[s]&&"object"==typeof t[s]?r[s]=i(e[s],t[s]):r[s]=e[s]}catch(e){r[s]||(0,n.R)(1,e)}return r}catch(e){(0,n.R)(2,e)}}},2555(e,t,r){"use strict";r.d(t,{f:()=>s});var n=r(384),i=r(8122);const a={beacon:n.NT.beacon,errorBeacon:n.NT.errorBeacon,licenseKey:void 0,applicationID:void 0,sa:void 0,queueTime:void 0,applicationTime:void 0,ttGuid:void 0,user:void 0,account:void 0,product:void 0,extra:void 0,jsAttributes:{},userAttributes:void 0,atts:void 0,transactionName:void 0,tNamePlain:void 0};function s(e){try{return!!e.licenseKey&&!!e.errorBeacon&&!!e.applicationID}catch(e){return!1}}r.d(t,["D",0,e=>(0,i.a)(e,a)])},7699(e,t,r){"use strict";var n=r(860);const i=1e6,a={[n.K7.logging]:!0,[n.K7.genericEvents]:!0,[n.K7.jserrors]:!0,[n.K7.ajax]:!0};r.d(t,["It",0,i,"KC",0,a,"qh",0,"SESSION_ERROR","zd",0,5e5])},9324(e,t,r){"use strict";r.d(t,["xv",0,"1.324.0"])},981(e,t,r){"use strict";r.d(t,["R",0,{AJAX:"AjaxRequest",PA:"PageAction",UA:"UserAction",BP:"BrowserPerformance",WS:"WebSocket",SPV:"SecurityPolicyViolation",JSE:"JavaScriptError",LOG:"Log",PVE:"PageView",PVT:"PageViewTiming",SR:"SessionReplay",ST:"SessionTrace",BI:"BrowserInteraction"}])},6154(e,t,r){"use strict";var n=r(1863);const i="undefined"!=typeof window&&!!window.document,a="undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self.navigator instanceof WorkerNavigator||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis.navigator instanceof WorkerNavigator),s=i?window:"undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis),o=Boolean("hidden"===s?.document?.visibilityState),c=""+s?.location,u=/iPad|iPhone|iPod/.test(s.navigator?.userAgent),d=u&&"undefined"==typeof SharedWorker,l=((()=>{const e=s.navigator?.userAgent?.match(/Firefox[/\s](\d+\.\d+)/);Array.isArray(e)&&e.length>=2&&e[1]})(),Date.now()-(0,n.t)());r.d(t,["OF",0,u,"RI",0,i,"WN",0,l,"bv",0,a,"gm",0,s,"m",0,c,"mw",0,o,"sb",0,d,"zk",0,()=>{const e=s?.performance?.getEntriesByType?.("navigation")?.[0];if(e&&e.responseStart>0&&e.responseStart<s.performance.now())return e}])},3241(e,t,r){"use strict";r.d(t,{W:()=>i});var n=r(6154);function i(e={}){try{n.gm.dispatchEvent(new CustomEvent("newrelic",{detail:e}))}catch(e){}}},1687(e,t,r){"use strict";r.d(t,{Ak:()=>o,Ze:()=>u,x3:()=>c});var n=r(3241),i=r(3606),a=r(860),s=r(2646);function o(e,t){if(!e)return;const r={staged:!1,priority:a.P3[t]||0};e.runtime.drainRegistry.get(t)||e.runtime.drainRegistry.set(t,r)}function c(e,t){if(!e)return;const r=e.runtime.drainRegistry;r&&(r.get(t)&&r.delete(t),l(e,t,!1),r.size&&d(e))}function u(e,t="feature",r=!1){if(e){if(!e.runtime.drainRegistry.get(t)||r)return l(e,t);e.runtime.drainRegistry.get(t).staged=!0,d(e)}}function d(e){if(!e)return;const t=Array.from(e.runtime.drainRegistry);t.every(([e,t])=>t.staged)&&(t.sort((e,t)=>e[1].priority-t[1].priority),t.forEach(([t])=>{e.runtime.drainRegistry.delete(t),l(e,t)}))}function l(e,t,r=!0){if(!e)return;const a=e.ee,o=i.i.handlers;if(a&&!a.aborted&&a.backlog&&o){if((0,n.W)({type:"lifecycle",name:"drain",feature:t}),r){const e=a.backlog[t],r=o[t];if(r){for(let t=0;e&&t<e.length;++t)f(e[t],r);Object.entries(r).forEach(([e,t])=>{Object.values(t||{}).forEach(t=>{t[0]?.on&&t[0].context()instanceof s.y&&!t[0].listeners(e).includes(t[1])&&t[0].on(e,t[1])})})}}a.isolatedBacklog||delete o[t],a.backlog[t]=null,a.emit("drain-"+t,[])}}function f(e,t){var r=e[1];Object.values(t[r]||{}).forEach(t=>{var r=e[0];if(t[0]===r){var n=t[1],i=e[3],a=e[2];n.apply(i,a)}})}},7836(e,t,r){"use strict";var n=r(384),i=r(8990),a=r(2646),s=r(5607);const o="nr@context:".concat(s.W),c=function e(t,r){var n={},s={},d={},l=!1;try{l=16===r.length&&u.initializedAgents?.[r]?.runtime.isolatedBacklog}catch(e){}var f={on:p,addEventListener:p,removeEventListener:function(e,t){var r=n[e];if(!r)return;for(var i=0;i<r.length;i++)r[i]===t&&r.splice(i,1)},emit:function(e,r,n,i,a){!1!==a&&(a=!0);if(c.aborted&&!i)return;t&&a&&t.emit(e,r,n);var o=g(n);m(e).forEach(e=>{e.apply(o,r)});var u=v()[s[e]];u&&u.push([f,e,r,o]);return o},get:h,listeners:m,context:g,buffer:function(e,t){const r=v();if(t=t||"feature",f.aborted)return;Object.entries(e||{}).forEach(([e,n])=>{s[n]=t,t in r||(r[t]=[])})},abort:function(){f._aborted=!0,Object.keys(f.backlog).forEach(e=>{delete f.backlog[e]})},isBuffering:function(e){return!!v()[s[e]]},debugId:r,backlog:l?{}:t&&"object"==typeof t.backlog?t.backlog:{},isolatedBacklog:l};return Object.defineProperty(f,"aborted",{get:()=>{let e=f._aborted||!1;return e||(t&&(e=t.aborted),e)}}),f;function g(e){return e&&e instanceof a.y?e:e?(0,i.I)(e,o,()=>new a.y(o)):new a.y(o)}function p(e,t){n[e]=m(e).concat(t)}function m(e){return n[e]||[]}function h(t){return d[t]=d[t]||e(f,t)}function v(){return f.backlog}}(void 0,"globalEE"),u=(0,n.Zm)();u.ee||(u.ee=c),r.d(t,["P",0,o,"ee",0,c])},2646(e,t,r){"use strict";r.d(t,{y:()=>n});class n{constructor(e){this.contextId=e}}},9908(e,t,r){"use strict";r.d(t,{d:()=>n,p:()=>i});var n=r(7836).ee.get("handle");function i(e,t,r,i,a){a?(a.buffer([e],i),a.emit(e,t,r)):(n.buffer([e],i),n.emit(e,t,r))}},3606(e,t,r){"use strict";r.d(t,{i:()=>a});var n=r(9908);a.on=s;var i=a.handlers={};function a(e,t,r,a){s(a||n.d,i,e,t,r)}function s(e,t,r,i,a){a||(a="feature"),e||(e=n.d);var s=t[a]=t[a]||{};(s[r]=s[r]||[]).push([e,i])}},3878(e,t,r){"use strict";function n(e,t){return{capture:e,passive:!1,signal:t}}function i(e,t,r=!1,i){window.addEventListener(e,t,n(r,i))}function a(e,t,r=!1,i){document.addEventListener(e,t,n(r,i))}r.d(t,{DD:()=>a,jT:()=>n,sp:()=>i})},5607(e,t,r){"use strict";const n=(0,r(9566).bz)();r.d(t,["W",0,n])},9566(e,t,r){"use strict";r.d(t,{LA:()=>s,bz:()=>a});var n=r(6154);function i(e,t){return e?15&e[t]:16*Math.random()|0}function a(){const e=n.gm?.crypto||n.gm?.msCrypto;let t,r=0;return e&&e.getRandomValues&&(t=e.getRandomValues(new Uint8Array(30))),"xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".split("").map(e=>"x"===e?i(t,r++).toString(16):"y"===e?(3&i()|8).toString(16):e).join("")}function s(e){const t=n.gm?.crypto||n.gm?.msCrypto;let r,a=0;t&&t.getRandomValues&&(r=t.getRandomValues(new Uint8Array(e)));const s=[];for(var o=0;o<e;o++)s.push(i(r,a++).toString(16));return s.join("")}},2614(e,t,r){"use strict";r.d(t,["BB",0,18e5,"Wt",0,"NRBA_SESSION::","iL",0,{SAME_TAB:"same-tab",CROSS_TAB:"cross-tab"},"tS",0,{STARTED:"session-started",PAUSE:"session-pause",RESET:"session-reset",RESUME:"session-resume",UPDATE:"session-update"},"wk",0,144e5])},1863(e,t,r){"use strict";function n(){return Math.floor(performance.now())}r.d(t,{t:()=>n})},944(e,t,r){"use strict";r.d(t,{R:()=>i});var n=r(3241);function i(e,t){"function"==typeof console.debug&&(console.debug("New Relic Warning: https://github.com/newrelic/newrelic-browser-agent/blob/main/docs/warning-codes.md#".concat(e),t),(0,n.W)({drained:null,type:"data",name:"warn",feature:"warn",data:{code:e,secondary:t}}))}},8990(e,t,r){"use strict";r.d(t,{I:()=>i});var n=Object.prototype.hasOwnProperty;function i(e,t,r){if(n.call(e,t))return e[t];var i=r();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:i,writable:!0,enumerable:!1}),i}catch(e){}return e[t]=i,i}},6389(e,t,r){"use strict";function n(e,t=500,r={}){const n=r?.leading||!1;let i;return(...r)=>{n&&void 0===i&&(e.apply(this,r),i=setTimeout(()=>{i=clearTimeout(i)},t)),n||(clearTimeout(i),i=setTimeout(()=>{e.apply(this,r)},t))}}function i(e){let t=!1;return(...r)=>{t||(t=!0,e.apply(this,r))}}r.d(t,{J:()=>i,s:()=>n})},1910(e,t,r){"use strict";r.d(t,{i:()=>a});var n=r(944);const i=new Map;function a(...e){return e.every(e=>{if(i.has(e))return i.get(e);const t="function"==typeof e?e.toString():"",r=t.includes("[native code]"),a=t.includes("nrWrapper");return r||a||(0,n.R)(64,e?.name||t),i.set(e,r),r})}},5289(e,t,r){"use strict";r.d(t,{GG:()=>s,Qr:()=>c,sB:()=>o});var n=r(3878),i=r(6389);function a(){return"undefined"==typeof document||"complete"===document.readyState}function s(e,t){if(a())return e();const r=(0,i.J)(e),s=setInterval(()=>{a()&&(clearInterval(s),r())},500);(0,n.sp)("load",r,t)}function o(e){if(a())return e();(0,n.DD)("DOMContentLoaded",e)}function c(e){if(a())return e();(0,n.sp)("popstate",e)}},384(e,t,r){"use strict";r.d(t,{Zm:()=>c,bQ:()=>d,dV:()=>u,pV:()=>l});var n=r(6154),i=r(1863),a=r(944),s=r(1910);const o={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net"};function c(){return n.gm.NREUM||(n.gm.NREUM={}),void 0===n.gm.newrelic&&(n.gm.newrelic=n.gm.NREUM),n.gm.NREUM}function u(){let e=c();return e.o||(e.o={ST:n.gm.setTimeout,SI:n.gm.setImmediate||n.gm.setInterval,CT:n.gm.clearTimeout,XHR:n.gm.XMLHttpRequest,REQ:n.gm.Request,EV:n.gm.Event,PR:n.gm.Promise,MO:n.gm.MutationObserver,FETCH:n.gm.fetch,WS:n.gm.WebSocket},(0,s.i)(...Object.values(e.o))),e}function d(e,t){let r=c();r.initializedAgents??={},t.initializedAt={ms:(0,i.t)(),date:new Date},r.initializedAgents[e]=t,2===Object.keys(r.initializedAgents).length&&(0,a.R)(69)}function l(){return function(){let e=c();const t=e.info||{};e.info={beacon:o.beacon,errorBeacon:o.errorBeacon,...t}}(),function(){let e=c();const t=e.init||{};e.init={...t}}(),u(),function(){let e=c();const t=e.loader_config||{};e.loader_config={...t}}(),c()}r.d(t,["NT",0,o])},2843(e,t,r){"use strict";r.d(t,{G:()=>a,u:()=>i});var n=r(3878);function i(e,t=!1,r,i){(0,n.DD)("visibilitychange",function(){if(t)return void("hidden"===document.visibilityState&&e());e(document.visibilityState)},r,i)}function a(e,t,r){(0,n.sp)("pagehide",e,t,r)}},9300(e,t,r){"use strict";r(860).K7.ajax;r.d(t,["mo",0,{NONE:"none",FAILURES:"failures",ALL:"all"}])},3969(e,t,r){"use strict";const n=r(860).K7.metrics;r.d(t,["TZ",0,n,"XG",0,"storeEventMetrics","xV",0,"storeSupportabilityMetrics"])},6630(e,t,r){"use strict";const n=r(860).K7.pageViewEvent;r.d(t,["T",0,n])},782(e,t,r){"use strict";const n=r(860).K7.pageViewTiming;r.d(t,["T",0,n])},4234(e,t,r){"use strict";r.d(t,{W:()=>i});var n=r(1687);class i{constructor(e,t){this.agentRef=e,this.ee=e?.ee,this.featureName=t,this.blocked=!1}deregisterDrain(){(0,n.x3)(this.agentRef,this.featureName)}}},7767(e,t,r){"use strict";var n=r(6154);r.d(t,["V",0,e=>n.RI&&!0===e?.privacy.cookies_enabled])},8362(e,t,r){"use strict";r.d(t,{d:()=>a});var n=r(9566),i=r(1741);class a extends i.W{agentIdentifier=(0,n.LA)(16)}},1741(e,t,r){"use strict";r.d(t,{W:()=>a});var n=r(944),i=r(4261);class a{#e(e,...t){if(this[e]!==a.prototype[e])return this[e](...t);(0,n.R)(35,e)}addPageAction(e,t){return this.#e(i.hG,e,t)}register(e){return this.#e(i.eY,e)}recordCustomEvent(e,t){return this.#e(i.fF,e,t)}setPageViewName(e,t){return this.#e(i.Fw,e,t)}setCustomAttribute(e,t,r){return this.#e(i.cD,e,t,r)}noticeError(e,t){return this.#e(i.o5,e,t)}setUserId(e,t=!1){return this.#e(i.Dl,e,t)}setApplicationVersion(e){return this.#e(i.nb,e)}setErrorHandler(e){return this.#e(i.bt,e)}addRelease(e,t){return this.#e(i.k6,e,t)}log(e,t){return this.#e("log",e,t)}start(){return this.#e("start")}finished(e){return this.#e(i.BL,e)}recordReplay(){return this.#e(i.CH)}pauseReplay(){return this.#e(i.Tb)}addToTrace(e){return this.#e(i.U2,e)}setCurrentRouteName(e){return this.#e(i.PA,e)}interaction(e){return this.#e(i.dT,e)}wrapLogger(e,t,r){return this.#e(i.Wb,e,t,r)}measure(e,t){return this.#e(i.V1,e,t)}consent(e){return this.#e(i.Pv,e)}}},4261(e,t,r){"use strict";r.d(t,["BL",0,"finished","CH",0,"recordReplay","Dl",0,"setUserId","Fw",0,"setPageViewName","PA",0,"setCurrentRouteName","Pv",0,"consent","Tb",0,"pauseReplay","U2",0,"addToTrace","V1",0,"measure","Wb",0,"wrapLogger","bt",0,"setErrorHandler","cD",0,"setCustomAttribute","dT",0,"interaction","eY",0,"register","fF",0,"recordCustomEvent","hG",0,"addPageAction","k6",0,"addRelease","nb",0,"setApplicationVersion","o5",0,"noticeError"])},1738(e,t,r){"use strict";r.d(t,{U:()=>l,Y:()=>d});var n=r(3241),i=r(9908),a=r(1863),s=r(944),o=r(3969),c=r(8362),u=r(860);function d(e,t,r,a){const d=a||r;!d||d[e]&&d[e]!==c.d.prototype[e]||(d[e]=function(){(0,i.p)(o.xV,["API/"+e+"/called"],void 0,u.K7.metrics,r.ee),(0,n.W)({drained:!!r.runtime?.activatedFeatures,type:"data",name:"api",feature:"api-"+e,data:{}});try{return t.apply(this,arguments)}catch(e){(0,s.R)(23,e)}})}function l(e,t,r,n,s){const o=e.info;null===r?delete o.jsAttributes[t]:o.jsAttributes[t]=r,(s||null===r)&&(0,i.p)("api-"+n,[(0,a.t)(),t,r],void 0,"session",e.ee)}},8374(e,t,r){r.nc=(()=>{try{return document?.currentScript?.nonce}catch(e){}return""})()},860(e,t,r){"use strict";const n="events",i="jserrors",a="browser/blobs",s="browser/logs",o={ajax:"ajax",genericEvents:"generic_events",jserrors:i,logging:"logging",metrics:"metrics",pageAction:"page_action",pageViewEvent:"page_view_event",pageViewTiming:"page_view_timing",sessionReplay:"session_replay",sessionTrace:"session_trace",softNav:"soft_navigations"},c={[o.pageViewEvent]:1,[o.pageViewTiming]:2,[o.metrics]:3,[o.jserrors]:4,[o.softNav]:5,[o.ajax]:6,[o.sessionTrace]:7,[o.sessionReplay]:8,[o.logging]:9,[o.genericEvents]:10},u={[o.pageViewEvent]:"rum",[o.pageViewTiming]:n,[o.ajax]:n,[o.softNav]:n,[o.metrics]:i,[o.jserrors]:i,[o.sessionTrace]:a,[o.sessionReplay]:a,[o.logging]:s,[o.genericEvents]:"ins"};r.d(t,["$J",0,u,"K7",0,o,"P3",0,c,"XX",0,i,"Yy",0,s,"df",0,a,"hg",0,"connect"])}};const t={};function r(n){const i=t[n];if(void 0!==i)return i.exports;const a=t[n]={exports:{}};return e[n](a,a.exports,r),a.exports}r.m=e,r.d=(e,t)=>{if(Array.isArray(t))for(var n=0;n<t.length;){var i=t[n++],a=t[n++];r.o(e,i)?0===a&&n++:0===a?Object.defineProperty(e,i,{enumerable:!0,value:t[n++]}):Object.defineProperty(e,i,{enumerable:!0,get:a})}else for(var i in t)r.o(t,i)&&!r.o(e,i)&&Object.defineProperty(e,i,{enumerable:!0,get:t[i]})},r.f={},r.e=e=>Promise.all(Object.keys(r.f).reduce((t,n)=>(r.f[n](e,t),t),[])),r.u=e=>"nr-rum-1.324.0.min.js",r.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),(()=>{const e={},t="NRBA-1.324.0.PROD:";r.l=(n,i,a,s)=>{if(e[n])return void e[n].push(i);let o,c;if(void 0!==a){const e=document.getElementsByTagName("script");for(var u=0;u<e.length;u++){const r=e[u];if(r.getAttribute("src")==n||r.getAttribute("data-webpack")==t+a){o=r;break}}}if(!o){c=!0;var d={296:"sha512-Pjy0Jxmo6oAG6oGKLKrf8x8xyaSM1NuL7vLGv9xRLEw0hrpERDruLI5RxlCHNy0NpMyEPWhlC34zujXIR3qJPQ=="};o=document.createElement("script"),o.charset="utf-8",r.nc&&o.setAttribute("nonce",r.nc),o.setAttribute("data-webpack",t+a),o.src=n,0!==o.src.indexOf(window.location.origin+"/")&&(o.crossOrigin="anonymous"),d[s]&&(o.integrity=d[s])}e[n]=[i];const l=(t,r)=>{o.onerror=o.onload=null,clearTimeout(f);const i=e[n];if(delete e[n],o.parentNode?.removeChild(o),i?.forEach(e=>e(r)),t)return t(r)},f=setTimeout(l.bind(null,void 0,{type:"timeout",target:o}),12e4);o.onerror=l.bind(null,o.onerror),o.onload=l.bind(null,o.onload),c&&document.head.appendChild(o)}})(),r.r=e=>{Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},r.p="https://js-agent.newrelic.com/",(()=>{const e={374:0,840:0};r.f.j=(t,n)=>{let i=r.o(e,t)?e[t]:void 0;if(0!==i)if(i)n.push(i[2]);else{const a=new Promise((r,n)=>i=e[t]=[r,n]);n.push(i[2]=a);const s=r.p+r.u(t),o=new Error,c=n=>{if(r.o(e,t)&&(i=e[t],0!==i&&(e[t]=void 0),i)){const e=n&&("load"===n.type?"missing":n.type),r=n&&n.target&&n.target.src;o.message="Loading chunk "+t+" failed: ("+e+": "+r+")",o.name="ChunkLoadError",o.type=e,o.request=r,i[1](o)}};r.l(s,c,"chunk-"+t,t)}};const t=(t,n)=>{let[i,a,s]=n;var o,c,u=0;if(i.some(t=>0!==e[t])){for(o in a)r.o(a,o)&&(r.m[o]=a[o]);if(s)s(r)}for(t&&t(n);u<i.length;u++)c=i[u],r.o(e,c)&&e[c]&&e[c][0](),e[c]=0},n=self["webpackChunk:NRBA-1.324.0.PROD"]=self["webpackChunk:NRBA-1.324.0.PROD"]||[];n.forEach(t.bind(null,0)),n.push=t.bind(null,n.push.bind(n))})(),(()=>{"use strict";r(8374);var e=r(8362),t=r(860);const n=Object.values(t.K7);var i=r(384),a=r(1741);var s=r(2555),o=r(981);t.K7.genericEvents,o.R.PA,o.R.UA,o.R.BP;const c={RESOURCES:"experimental.resources",REGISTER:"register"};var u=r(9300);const d=e=>{if(!e||"string"!=typeof e)return!1;try{document.createDocumentFragment().querySelector(e)}catch{return!1}return!0};var l=r(2614),f=r(944),g=r(8122);const p="[data-nr-mask]",m=e=>(0,g.a)(e,(()=>{const e={feature_flags:[],experimental:{register:!1,resources:!1,iframe_bridge:!1,iframe_domains:[]},mask_selector:"*",block_selector:"[data-nr-block]",mask_input_options:{color:!1,date:!1,"datetime-local":!1,email:!1,month:!1,number:!1,range:!1,search:!1,tel:!1,text:!1,time:!1,url:!1,week:!1,textarea:!1,select:!1,password:!0}};return{ajax:{deny_list:void 0,block_internal:!0,enabled:!0,autoStart:!0,capture_payloads:u.mo.NONE},api:{register:{get enabled(){return e.feature_flags.includes(c.REGISTER)||e.experimental.register},set enabled(t){e.experimental.register=t},duplicate_data_to_container:!1,get allow_iframe_bridge(){return e.feature_flags.includes(c.IFRAME_BRIDGE)||e.experimental.iframe_bridge},set allow_iframe_bridge(t){e.experimental.iframe_bridge=t},get iframe_domains(){return e.experimental.iframe_domains},set iframe_domains(t){Array.isArray(t)?e.experimental.iframe_domains=t:(0,f.R)(1,t)}}},browser_consent_mode:{enabled:!1},distributed_tracing:{enabled:void 0,exclude_newrelic_header:void 0,cors_use_newrelic_header:void 0,cors_use_tracecontext_headers:void 0,allowed_origins:void 0},get feature_flags(){return e.feature_flags},set feature_flags(t){e.feature_flags=t},generic_events:{enabled:!0,autoStart:!0},harvest:{interval:30},jserrors:{enabled:!0,autoStart:!0},logging:{enabled:!0,autoStart:!0},metrics:{enabled:!0,autoStart:!0},obfuscate:void 0,page_action:{enabled:!0},page_view_event:{enabled:!0,autoStart:!0},page_view_timing:{enabled:!0,autoStart:!0},performance:{capture_marks:!1,capture_measures:!1,capture_detail:!0,resources:{get enabled(){return e.feature_flags.includes(c.RESOURCES)||e.experimental.resources},set enabled(t){e.experimental.resources=t},asset_types:[],first_party_domains:[],ignore_newrelic:!0}},privacy:{cookies_enabled:!0},proxy:{assets:void 0,beacon:void 0},session:{expiresMs:l.wk,inactiveMs:l.BB},session_replay:{autoStart:!0,enabled:!1,preload:!1,sampling_rate:10,error_sampling_rate:100,collect_fonts:!1,inline_images:!1,fix_stylesheets:!0,mask_all_inputs:!0,get mask_text_selector(){return e.mask_selector},set mask_text_selector(t){d(t)?e.mask_selector="".concat(t,",").concat(p):""===t||null===t?e.mask_selector=p:(0,f.R)(5,t)},get block_class(){return"nr-block"},get ignore_class(){return"nr-ignore"},get mask_text_class(){return"nr-mask"},get block_selector(){return e.block_selector},set block_selector(t){d(t)?e.block_selector+=",".concat(t):""!==t&&(0,f.R)(6,t)},get mask_input_options(){return e.mask_input_options},set mask_input_options(t){t&&"object"==typeof t?e.mask_input_options={...t,password:!0}:(0,f.R)(7,t)}},session_trace:{enabled:!0,autoStart:!0},soft_navigations:{enabled:!0,autoStart:!0},ssl:void 0,user_actions:{enabled:!0,elementAttributes:["id","className","tagName","type"]},web_sockets:{enabled:!1}}})());var h=r(6154),v=r(9324);let b=0;const y={buildEnv:"PROD",distMethod:"CDN",version:v.xv,originTime:h.WN},_={consented:!1},w={activatedFeatures:void 0,appMetadata:{},configured:!1,get consented(){return this.session?.state?.consent||_.consented},set consented(e){_.consented=e},customTransaction:void 0,denyList:[],disabled:!1,drainRegistry:new Map,connector:void 0,harvester:void 0,v2Target:void 0,isolatedBacklog:!1,isRecording:!1,loaderType:void 0,maxBytes:3e4,obfuscator:void 0,onerror:void 0,ptid:void 0,releaseIds:{},session:void 0,timeKeeper:void 0,registeredEntities:[],jsAttributesMetadata:{bytes:0},get harvestCount(){return++b},listeningForIframeMessages:!1},R="BA";var A=r(7836),x=r(3241);const E={accountID:void 0,trustKey:void 0,agentID:void 0,licenseKey:void 0,applicationID:void 0,xpid:void 0};var S=r(9908);const k="newrelic-iframe-";function T(e,t={},n,o){let{init:c,info:u,loader_config:d,runtime:l={},exposed:f=!0}=t;if(!u){const e=(0,i.pV)();c=e.init,u=e.info,d=e.loader_config}var p;e.init=m(c||{}),e.loader_config=(p=d||{},(0,g.a)(p,E)),u.jsAttributes??={},h.bv&&(u.jsAttributes.isWorker=!0),e.info=(0,s.D)(u);const v=e.init;e.runtime??=(e=>{const t=(0,g.a)(e,w),r=Object.keys(y).reduce((e,t)=>(e[t]={value:y[t],writable:!1,configurable:!0,enumerable:!0},e),{});return Object.defineProperties(t,r)})(l),e.runtime.v2Target??={type:R,instance:e.agentIdentifier,get id(){return e.runtime.appMetadata?.agents?.[0]?.entityGuid},get attributes(){return{"entity.guid":this.id,appId:e.info.applicationID}}},v.proxy.assets&&(e=>{const t=e.startsWith("http");e+="/",r.p=t?e:"https://"+e})(v.proxy.assets),e.runtime.configured||(Object.defineProperty(e,"beacons",{get:()=>[e.info.beacon,e.info.errorBeacon,e.init.proxy.assets,e.init.proxy.beacon].filter(Boolean)}),Object.defineProperty(e.runtime,"denyList",{get:()=>[...e.init.ajax.deny_list||[],...e.init.ajax.block_internal?e.beacons:[]]}),e.runtime.ptid=e.agentIdentifier,function(e){const t=(0,i.pV)();Object.getOwnPropertyNames(a.W.prototype).forEach(r=>{const n=a.W.prototype[r];if("function"!=typeof n||"constructor"===n)return;let i=t[r];e[r]&&!1!==e.exposed&&"micro-agent"!==e.runtime?.loaderType&&(t[r]=(...t)=>{const n=e[r](...t);return i?i(...t):n})})}(e),e.runtime.loaderType=n,e.ee=A.ee.get(e.agentIdentifier),e.exposed=f,(0,x.W)({drained:!!e.runtime.activatedFeatures,type:"lifecycle",name:"initialize",feature:void 0,data:e.config}),e.init.api.register.allow_iframe_bridge&&h.gm.addEventListener("message",t=>{"string"==typeof t.data?.type&&t.data.type.startsWith(k)&&(0,S.p)("iframe-message",[t],void 0,"IFRAME",e.ee)}),e.runtime.configured=!0)}var j=r(1863),P=r(4261),N=r(1738);var O=r(1687),M=r(4234),I=r(5289),D=r(7767);function V(e){return!!(0,i.dV)().o.MO&&(0,D.V)(e)&&!0===e?.session_trace.enabled}var W=r(6389),B=r(7699);const C=new WeakSet,K=new WeakMap;class U extends M.W{constructor(e,t){super(e,t),this.abortHandler=void 0,this.featAggregate=void 0,this.loadedSuccessfully=void 0,this.onAggregateImported=new Promise(e=>{this.loadedSuccessfully=e}),this.deferred=Promise.resolve(),!1===e.init[this.featureName].autoStart?this.deferred=new Promise((t,r)=>{this.ee.on("manual-start-all",(0,W.J)(()=>{(0,O.Ak)(e,this.featureName),t()}))}):(0,O.Ak)(e,t)}importAggregator(e,t,n={}){if(this.featAggregate)return;const i=async()=>{if(await this.deferred,this.#t(e),!(0,s.f)(e.info))return(0,f.R)(43),e.ee.abort(),void this.loadedSuccessfully(!1);try{await async function(e,t,n){if(K.has(e))return K.get(e);const i=(async()=>{if((0,D.V)(e.init))try{const{setupAgentSession:t}=await r.e(296).then(r.bind(r,1768));t(e)}catch(e){(0,f.R)(20,e),t.emit("internal-error",[e]),(0,S.p)(B.qh,[e],void 0,n,t)}if(e.init.api.register.allow_iframe_bridge)try{const{setupIframeMFEMessageListener:t}=await Promise.resolve().then(function(){const e=new Error("Cannot find module '../../loaders/configure/iframe-message-handler'");throw e.code="MODULE_NOT_FOUND",e});t(e)}catch(e){(0,f.R)(23,e)}const[{Connector:i},{Harvester:a}]=await Promise.all([r.e(296).then(r.bind(r,6589)),r.e(296).then(r.bind(r,5237))]);e.runtime.connector=new i(e),e.runtime.harvester=new a(e);const s=Object.values(e.features).filter(t=>e.runtime.drainRegistry.has(t.featureName));Promise.all(s.map(e=>e.onAggregateImported)).then(()=>e.runtime.harvester.startTimer())})();K.set(e,i),await i}(e,this.ee,this.featureName)}catch(e){return(0,f.R)(79,e),this.ee.abort(),void this.loadedSuccessfully(!1)}try{if(!this.#r(this.featureName,e.runtime.session,e.init))return this.abortHandler?.(),(0,O.Ze)(this.agentRef,this.featureName),void this.loadedSuccessfully(!1);const{Aggregate:r}=await t();this.featAggregate=new r(e,n),e.runtime.harvester.initializedAggregates.push(this.featAggregate),this.loadedSuccessfully(!0)}catch(e){(0,f.R)(34,e),this.abortHandler?.(),(0,O.Ze)(this.agentRef,this.featureName,!0),this.loadedSuccessfully(!1)}};h.RI?(0,I.GG)(()=>i(),!0):i()}#r(e,r,n){if(this.blocked)return!1;switch(e){case t.K7.sessionReplay:return V(n)&&!!r;case t.K7.sessionTrace:return!!r;default:return!0}}#t(e){if(!C.has(e)&&(C.add(e),!(0,s.f)(e.info))){const t=(0,i.pV)();let r={...t.info?.jsAttributes};try{r={...r,...e.info?.jsAttributes}}catch(e){}T(e,{...t,info:{...t.info,jsAttributes:r},runtime:e.runtime},e.runtime.loaderType)}}}var L=r(6630);class F extends U{static featureName=L.T;constructor(e){var t;super(e,L.T),this.setupInspectionEvents(),t=e,(0,N.Y)(P.Fw,function(e,r){"string"==typeof e&&("/"!==e.charAt(0)&&(e="/"+e),t.runtime.customTransaction=(r||"http://custom.transaction")+e,(0,S.p)("api-"+P.Fw,[(0,j.t)()],void 0,void 0,t.ee))},t),this.importAggregator(e,()=>e.init.feature_flags.includes("rum_v2")?r.e(296).then(r.bind(r,908)):r.e(296).then(r.bind(r,7927)))}setupInspectionEvents(){const e=(e,t)=>{e&&(0,x.W)({timeStamp:e.timeStamp,loaded:"complete"===e.target.readyState,type:"window",name:t,data:e.target.location+""})};(0,I.sB)(t=>{e(t,"DOMContentLoaded")}),(0,I.GG)(t=>{e(t,"load")}),(0,I.Qr)(t=>{e(t,"navigate")}),this.ee.on(l.tS.UPDATE,(e,t)=>{(0,x.W)({type:"lifecycle",name:"session",data:t})})}}class G extends e.d{constructor(e){var t;(super(),h.gm)?(this.features={},(0,i.bQ)(this.agentIdentifier,this),this.desiredFeatures=new Set(e.features||[]),this.desiredFeatures.add(F),T(this,e,e.loaderType||"agent"),t=this,(0,N.Y)(P.cD,function(e,r,n=!1){if("string"==typeof e){if(["string","number","boolean"].includes(typeof r)||null===r)return(0,N.U)(t,e,r,P.cD,n);(0,f.R)(40,typeof r)}else(0,f.R)(39,typeof e)},t),function(e){(0,N.Y)(P.Dl,function(t,r=!1){if("string"!=typeof t&&null!==t)return void(0,f.R)(41,typeof t);const n=e.info.jsAttributes["enduser.id"];r&&null!=n&&n!==t?(0,S.p)("api-setUserIdAndResetSession",[t],void 0,"session",e.ee):(0,N.U)(e,"enduser.id",t,P.Dl,!0)},e)}(this),function(e){(0,N.Y)(P.nb,function(t){if("string"==typeof t||null===t)return(0,N.U)(e,"application.version",t,P.nb,!1);(0,f.R)(42,typeof t)},e)}(this),function(e){(0,N.Y)("start",function(){e.ee.emit("manual-start-all")},e)}(this),function(e){(0,N.Y)(P.Pv,function(t=!0){if("boolean"==typeof t){if((0,S.p)("api-"+P.Pv,[t],void 0,"session",e.ee),e.runtime.consented=t,t){const t=e.features.page_view_event;t.onAggregateImported.then(e=>{const r=t.featAggregate;e&&!r.sentRum&&r.sendRum?.()})}}else(0,f.R)(65,typeof t)},e)}(this),this.run()):(0,f.R)(21)}get config(){return{info:this.info,init:this.init,loader_config:this.loader_config,runtime:this.runtime}}get api(){return this}run(){try{const e=function(e){const t={};return n.forEach(r=>{t[r]=!!e[r]?.enabled}),t}(this.init),r=[...this.desiredFeatures],i=this.init.feature_flags.includes("rum_v2");r.sort((e,r)=>t.P3[e.featureName]-t.P3[r.featureName]),r.forEach(r=>{if(!e[r.featureName]&&(i||r.featureName!==t.K7.pageViewEvent))return;const n=function(e){switch(e){case t.K7.ajax:return[t.K7.jserrors];case t.K7.sessionTrace:return[t.K7.ajax,t.K7.pageViewEvent];case t.K7.sessionReplay:return[t.K7.sessionTrace];case t.K7.pageViewTiming:return[t.K7.pageViewEvent];default:return[]}}(r.featureName).filter(e=>!(e in this.features));n.length>0&&(0,f.R)(36,{targetFeature:r.featureName,missingDependencies:n}),this.features[r.featureName]=new r(this)})}catch(e){(0,f.R)(22,e);for(const e in this.features)this.features[e].abortHandler?.();const t=(0,i.Zm)();delete t.initializedAgents[this.agentIdentifier]?.features,delete this.sharedAggregator;return t.ee.get(this.agentIdentifier).abort(),!1}}}var H=r(2843),z=r(782);class Y extends U{static featureName=z.T;constructor(e){super(e,z.T),h.RI&&((0,H.u)(()=>(0,S.p)("docHidden",[(0,j.t)()],void 0,z.T,this.ee),!0),(0,H.G)(()=>(0,S.p)("winPagehide",[(0,j.t)()],void 0,z.T,this.ee)),this.importAggregator(e,()=>r.e(296).then(r.bind(r,9981))))}}var Z=r(3969);class q extends U{static featureName=Z.TZ;constructor(e){super(e,Z.TZ),this.importAggregator(e,()=>r.e(296).then(r.bind(r,9623)))}}new G({features:[F,Y,q],loaderType:"lite"})})()})();</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="pingback" href="https://www.linux.com/xmlrpc.php" />
+    <meta name='robots' content='max-image-preview:large' />
+
+<!-- Google Tag Manager for WordPress by gtm4wp.com -->
+<script data-cfasync="false" data-pagespeed-no-defer>
+	var gtm4wp_datalayer_name = "dataLayer";
+	var dataLayer = dataLayer || [];
+</script>
+<!-- End Google Tag Manager for WordPress by gtm4wp.com --><link rel="icon" type="image/png" href="https://www.linux.com/wp-content/uploads/2019/08/favicon-300x300.png">
+<!-- This site is optimized with the Yoast SEO Premium plugin v11.9 - https://yoast.com/wordpress/plugins/seo/ -->
+<link rel="canonical" href="https://www.linux.com/what-is-linux/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="What is Linux? - Linux.com" />
+<meta property="og:description" content="Looking to get started in Linux? Develop a good working knowledge of Linux using both the graphical interface and command line across the major Linux distribution families with The Linux Foundation&#8217;s Intro to Linux online course. Enroll for free here. (Este curso también está disponible en español. Haga clic aquí para Introducción a Linux.) From smartphones &hellip;" />
+<meta property="og:url" content="https://www.linux.com/what-is-linux/" />
+<meta property="og:site_name" content="Linux.com" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:description" content="Looking to get started in Linux? Develop a good working knowledge of Linux using both the graphical interface and command line across the major Linux distribution families with The Linux Foundation&#8217;s Intro to Linux online course. Enroll for free here. (Este curso también está disponible en español. Haga clic aquí para Introducción a Linux.) From smartphones [&hellip;]" />
+<meta name="twitter:title" content="What is Linux? - Linux.com" />
+<script type='application/ld+json' class='yoast-schema-graph yoast-schema-graph--main'>{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://www.linux.com/#website","url":"https://www.linux.com/","name":"Linux.com","potentialAction":{"@type":"SearchAction","target":"https://www.linux.com/?s={search_term_string}","query-input":"required name=search_term_string"}},{"@type":"WebPage","@id":"https://www.linux.com/what-is-linux/#webpage","url":"https://www.linux.com/what-is-linux/","inLanguage":"en-US","name":"What is Linux? - Linux.com","isPartOf":{"@id":"https://www.linux.com/#website"},"datePublished":"2018-08-20T03:05:09-07:00","dateModified":"2022-08-26T13:22:20-07:00"}]}</script>
+<!-- / Yoast SEO Premium plugin. -->
+
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel="alternate" type="application/rss+xml" title="Linux.com &raquo; Feed" href="https://www.linux.com/feed/" />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://www.linux.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.linux.com%2Fwhat-is-linux%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://www.linux.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.linux.com%2Fwhat-is-linux%2F&#038;format=xml" />
+<style id="wp-img-auto-sizes-contain-inline-css">
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+<style id="wp-emoji-styles-inline-css">
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+/*# sourceURL=wp-emoji-styles-inline-css */
+</style>
+
+<link rel='stylesheet' id='mpp_gutenberg-css' href='https://www.linux.com/wp-content/plugins/profile-builder/add-ons-free/user-profile-picture/dist/blocks.style.build.css?ver=2.6.0' media='all' />
+
+<link rel='stylesheet' id='td-plugin-multi-purpose-css' href='https://www.linux.com/wp-content/plugins/td-composer/td-multi-purpose/style.css?ver=6d1f7270fa5f356ebd75d59ba3e2bb86' media='all' />
+<link rel='stylesheet' id='google-fonts-style-css' href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Roboto:400,600,700&#038;display=swap&#038;ver=12.7.8' media='all' />
+<link rel='stylesheet' id='td-theme-css' href='https://www.linux.com/wp-content/themes/Newspaper/style.css?ver=12.7.8' media='all' />
+<style id="td-theme-inline-css">@media (max-width:767px){.td-header-desktop-wrap{display:none}}@media (min-width:767px){.td-header-mobile-wrap{display:none}}</style>
+<link rel='stylesheet' id='td-theme-child-css' href='https://www.linux.com/wp-content/themes/Newspaper-child/style.css?ver=12.7.8c' media='all' />
+<link rel='stylesheet' id='td-legacy-framework-front-style-css' href='https://www.linux.com/wp-content/plugins/td-composer/legacy/Newspaper/assets/css/td_legacy_main.css?ver=6d1f7270fa5f356ebd75d59ba3e2bb86' media='all' />
+<link rel='stylesheet' id='td-standard-pack-framework-front-style-css' href='https://www.linux.com/wp-content/plugins/td-standard-pack/Newspaper/assets/css/td_standard_pack_main.css?ver=ca277ee5dcb470bd24a3f9654a38d235' media='all' />
+<link rel='stylesheet' id='wppb_stylesheet-css' href='https://www.linux.com/wp-content/plugins/profile-builder/assets/css/style-front-end.css?ver=4.0.2' media='all' />
+<script id="jquery-core-js" src="https://www.linux.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1"></script>
+<script id="jquery-migrate-js" src="https://www.linux.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1"></script>
+<link rel="https://api.w.org/" href="https://www.linux.com/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://www.linux.com/wp-json/wp/v2/pages/107157" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.linux.com/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 7.1.3" />
+<link rel='shortlink' href='https://www.linux.com/?p=107157' />
+
+<!-- Google Tag Manager for WordPress by gtm4wp.com -->
+<!-- GTM Container placement set to footer -->
+<script data-cfasync="false" data-pagespeed-no-defer>
+	var dataLayer_content = {"pagePostType":"page","pagePostType2":"single-page","pagePostAuthor":"lnx001"};
+	dataLayer.push( dataLayer_content );
+</script>
+<script data-cfasync="false" data-pagespeed-no-defer>
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NXGNZW');
+</script>
+<!-- End Google Tag Manager for WordPress by gtm4wp.com --><script
+  src="https://transcend-cdn.com/cm/f484e2d0-ad2e-43a9-9d64-d07f6fa20966/airgap.js"
+  data-cfasync="false"
+  data-prompt="auto"
+></script>
+<!-- LFX Segments Analytics -->
+<script src="https://lfx-segment.platform.linuxfoundation.org/latest/lfx-segment-analytics.min.js"></script>
+<script>
+  // Initialize with default configuration (no custom write key needed)
+  LfxAnalytics.LfxSegmentsAnalytics.getInstance().init();
+</script>
+<!-- Start of HubSpot Embed Code -->
+<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/8112310.js"></script>
+<!-- End of HubSpot Embed Code -->
+
+
+<link rel="preload" href="/wp-content/themes/Newspaper/images/icons/newspaper.woff" as="font" crossorigin="anonymous">
+
+<meta name="google-site-verification" content="SFIbV25byRzBgCOryWQide6d9AyjJiw9gofilBbT2Ts" />
+<!-- JS generated by theme -->
+
+<script type="text/javascript" id="td-generated-header-js">
+    
+    
+
+	    var tdBlocksArray = []; //here we store all the items for the current page
+
+	    // td_block class - each ajax block uses a object of this class for requests
+	    function tdBlock() {
+		    this.id = '';
+		    this.block_type = 1; //block type id (1-234 etc)
+		    this.atts = '';
+		    this.td_column_number = '';
+		    this.td_current_page = 1; //
+		    this.post_count = 0; //from wp
+		    this.found_posts = 0; //from wp
+		    this.max_num_pages = 0; //from wp
+		    this.td_filter_value = ''; //current live filter value
+		    this.is_ajax_running = false;
+		    this.td_user_action = ''; // load more or infinite loader (used by the animation)
+		    this.header_color = '';
+		    this.ajax_pagination_infinite_stop = ''; //show load more at page x
+	    }
+
+        // td_js_generator - mini detector
+        ( function () {
+            var htmlTag = document.getElementsByTagName("html")[0];
+
+	        if ( navigator.userAgent.indexOf("MSIE 10.0") > -1 ) {
+                htmlTag.className += ' ie10';
+            }
+
+            if ( !!navigator.userAgent.match(/Trident.*rv\:11\./) ) {
+                htmlTag.className += ' ie11';
+            }
+
+	        if ( navigator.userAgent.indexOf("Edge") > -1 ) {
+                htmlTag.className += ' ieEdge';
+            }
+
+            if ( /(iPad|iPhone|iPod)/g.test(navigator.userAgent) ) {
+                htmlTag.className += ' td-md-is-ios';
+            }
+
+            var user_agent = navigator.userAgent.toLowerCase();
+            if ( user_agent.indexOf("android") > -1 ) {
+                htmlTag.className += ' td-md-is-android';
+            }
+
+            if ( -1 !== navigator.userAgent.indexOf('Mac OS X')  ) {
+                htmlTag.className += ' td-md-is-os-x';
+            }
+
+            if ( /chrom(e|ium)/.test(navigator.userAgent.toLowerCase()) ) {
+               htmlTag.className += ' td-md-is-chrome';
+            }
+
+            if ( -1 !== navigator.userAgent.indexOf('Firefox') ) {
+                htmlTag.className += ' td-md-is-firefox';
+            }
+
+            if ( -1 !== navigator.userAgent.indexOf('Safari') && -1 === navigator.userAgent.indexOf('Chrome') ) {
+                htmlTag.className += ' td-md-is-safari';
+            }
+
+            if( -1 !== navigator.userAgent.indexOf('IEMobile') ){
+                htmlTag.className += ' td-md-is-iemobile';
+            }
+
+        })();
+
+        var tdLocalCache = {};
+
+        ( function () {
+            "use strict";
+
+            tdLocalCache = {
+                data: {},
+                remove: function (resource_id) {
+                    delete tdLocalCache.data[resource_id];
+                },
+                exist: function (resource_id) {
+                    return tdLocalCache.data.hasOwnProperty(resource_id) && tdLocalCache.data[resource_id] !== null;
+                },
+                get: function (resource_id) {
+                    return tdLocalCache.data[resource_id];
+                },
+                set: function (resource_id, cachedData) {
+                    tdLocalCache.remove(resource_id);
+                    tdLocalCache.data[resource_id] = cachedData;
+                }
+            };
+        })();
+
+    
+    
+var td_viewport_interval_list=[{"limitBottom":767,"sidebarWidth":228},{"limitBottom":1018,"sidebarWidth":300},{"limitBottom":1140,"sidebarWidth":324}];
+var tdc_is_installed="yes";
+var tdc_domain_active=false;
+var td_ajax_url="https:\/\/www.linux.com\/wp-admin\/admin-ajax.php?td_theme_name=Newspaper&v=12.7.8";
+var td_get_template_directory_uri="https:\/\/www.linux.com\/wp-content\/plugins\/td-composer\/legacy\/common";
+var tds_snap_menu="";
+var tds_logo_on_sticky="";
+var tds_header_style="6";
+var td_please_wait="Please wait...";
+var td_email_user_pass_incorrect="User or password incorrect!";
+var td_email_user_incorrect="Email or username incorrect!";
+var td_email_incorrect="Email incorrect!";
+var td_user_incorrect="Username incorrect!";
+var td_email_user_empty="Email or username empty!";
+var td_pass_empty="Pass empty!";
+var td_pass_pattern_incorrect="Invalid Pass Pattern!";
+var td_retype_pass_incorrect="Retyped Pass incorrect!";
+var tds_more_articles_on_post_enable="";
+var tds_more_articles_on_post_time_to_wait="";
+var tds_more_articles_on_post_pages_distance_from_top=0;
+var tds_captcha="";
+var tds_theme_color_site_wide="#ff6c0e";
+var tds_smart_sidebar="";
+var tdThemeName="Newspaper";
+var tdThemeNameWl="Newspaper";
+var td_magnific_popup_translation_tPrev="Previous (Left arrow key)";
+var td_magnific_popup_translation_tNext="Next (Right arrow key)";
+var td_magnific_popup_translation_tCounter="%curr% of %total%";
+var td_magnific_popup_translation_ajax_tError="The content from %url% could not be loaded.";
+var td_magnific_popup_translation_image_tError="The image #%curr% could not be loaded.";
+var tdBlockNonce="4650b3b070";
+var tdMobileMenu="enabled";
+var tdMobileSearch="enabled";
+var tdDateNamesI18n={"month_names":["January","February","March","April","May","June","July","August","September","October","November","December"],"month_names_short":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"day_names":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"day_names_short":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"]};
+var tdb_modal_confirm="Save";
+var tdb_modal_cancel="Cancel";
+var tdb_modal_confirm_alt="Yes";
+var tdb_modal_cancel_alt="No";
+var td_deploy_mode="deploy";
+var td_ad_background_click_link="";
+var td_ad_background_click_target="";
+</script>
+
+
+<!-- Header style compiled by theme -->
+
+<style>.td-page-title,.td-category-title-holder .td-page-title{text-transform:capitalize}:root{--td_theme_color:#ff6c0e;--td_slider_text:rgba(255,108,14,0.7);--td_mobile_menu_color:#ff6c0e;--td_mobile_gradient_one_mob:#333333;--td_mobile_gradient_two_mob:#333333;--td_mobile_text_active_color:#333333}.td-header-style-12 .td-header-menu-wrap-full,.td-header-style-12 .td-affix,.td-grid-style-1.td-hover-1 .td-big-grid-post:hover .td-post-category,.td-grid-style-5.td-hover-1 .td-big-grid-post:hover .td-post-category,.td_category_template_3 .td-current-sub-category,.td_category_template_8 .td-category-header .td-category a.td-current-sub-category,.td_category_template_4 .td-category-siblings .td-category a:hover,.td_block_big_grid_9.td-grid-style-1 .td-post-category,.td_block_big_grid_9.td-grid-style-5 .td-post-category,.td-grid-style-6.td-hover-1 .td-module-thumb:after,.tdm-menu-active-style5 .td-header-menu-wrap .sf-menu>.current-menu-item>a,.tdm-menu-active-style5 .td-header-menu-wrap .sf-menu>.current-menu-ancestor>a,.tdm-menu-active-style5 .td-header-menu-wrap .sf-menu>.current-category-ancestor>a,.tdm-menu-active-style5 .td-header-menu-wrap .sf-menu>li>a:hover,.tdm-menu-active-style5 .td-header-menu-wrap .sf-menu>.sfHover>a{background-color:#ff6c0e}.td_mega_menu_sub_cats .cur-sub-cat,.td-mega-span h3 a:hover,.td_mod_mega_menu:hover .entry-title a,.header-search-wrap .result-msg a:hover,.td-header-top-menu .td-drop-down-search .td_module_wrap:hover .entry-title a,.td-header-top-menu .td-icon-search:hover,.td-header-wrap .result-msg a:hover,.top-header-menu li a:hover,.top-header-menu .current-menu-item>a,.top-header-menu .current-menu-ancestor>a,.top-header-menu .current-category-ancestor>a,.td-social-icon-wrap>a:hover,.td-header-sp-top-widget .td-social-icon-wrap a:hover,.td_mod_related_posts:hover h3>a,.td-post-template-11 .td-related-title .td-related-left:hover,.td-post-template-11 .td-related-title .td-related-right:hover,.td-post-template-11 .td-related-title .td-cur-simple-item,.td-post-template-11 .td_block_related_posts .td-next-prev-wrap a:hover,.td-category-header .td-pulldown-category-filter-link:hover,.td-category-siblings .td-subcat-dropdown a:hover,.td-category-siblings .td-subcat-dropdown a.td-current-sub-category,.footer-text-wrap .footer-email-wrap a,.footer-social-wrap a:hover,.td_module_17 .td-read-more a:hover,.td_module_18 .td-read-more a:hover,.td_module_19 .td-post-author-name a:hover,.td-pulldown-syle-2 .td-subcat-dropdown:hover .td-subcat-more span,.td-pulldown-syle-2 .td-subcat-dropdown:hover .td-subcat-more i,.td-pulldown-syle-3 .td-subcat-dropdown:hover .td-subcat-more span,.td-pulldown-syle-3 .td-subcat-dropdown:hover .td-subcat-more i,.tdm-menu-active-style3 .tdm-header.td-header-wrap .sf-menu>.current-category-ancestor>a,.tdm-menu-active-style3 .tdm-header.td-header-wrap .sf-menu>.current-menu-ancestor>a,.tdm-menu-active-style3 .tdm-header.td-header-wrap .sf-menu>.current-menu-item>a,.tdm-menu-active-style3 .tdm-header.td-header-wrap .sf-menu>.sfHover>a,.tdm-menu-active-style3 .tdm-header.td-header-wrap .sf-menu>li>a:hover{color:#ff6c0e}.td-mega-menu-page .wpb_content_element ul li a:hover,.td-theme-wrap .td-aj-search-results .td_module_wrap:hover .entry-title a,.td-theme-wrap .header-search-wrap .result-msg a:hover{color:#ff6c0e!important}.td_category_template_8 .td-category-header .td-category a.td-current-sub-category,.td_category_template_4 .td-category-siblings .td-category a:hover,.tdm-menu-active-style4 .tdm-header .sf-menu>.current-menu-item>a,.tdm-menu-active-style4 .tdm-header .sf-menu>.current-menu-ancestor>a,.tdm-menu-active-style4 .tdm-header .sf-menu>.current-category-ancestor>a,.tdm-menu-active-style4 .tdm-header .sf-menu>li>a:hover,.tdm-menu-active-style4 .tdm-header .sf-menu>.sfHover>a{border-color:#ff6c0e}.td-header-wrap .td-header-top-menu-full,.td-header-wrap .top-header-menu .sub-menu,.tdm-header-style-1.td-header-wrap .td-header-top-menu-full,.tdm-header-style-1.td-header-wrap .top-header-menu .sub-menu,.tdm-header-style-2.td-header-wrap .td-header-top-menu-full,.tdm-header-style-2.td-header-wrap .top-header-menu .sub-menu,.tdm-header-style-3.td-header-wrap .td-header-top-menu-full,.tdm-header-style-3.td-header-wrap .top-header-menu .sub-menu{background-color:#ff6c0e}.td-header-style-8 .td-header-top-menu-full{background-color:transparent}.td-header-style-8 .td-header-top-menu-full .td-header-top-menu{background-color:#ff6c0e;padding-left:15px;padding-right:15px}.td-header-wrap .td-header-top-menu-full .td-header-top-menu,.td-header-wrap .td-header-top-menu-full{border-bottom:none}.td-header-top-menu,.td-header-top-menu a,.td-header-wrap .td-header-top-menu-full .td-header-top-menu,.td-header-wrap .td-header-top-menu-full a,.td-header-style-8 .td-header-top-menu,.td-header-style-8 .td-header-top-menu a,.td-header-top-menu .td-drop-down-search .entry-title a{color:#ffffff}.top-header-menu .current-menu-item>a,.top-header-menu .current-menu-ancestor>a,.top-header-menu .current-category-ancestor>a,.top-header-menu li a:hover,.td-header-sp-top-widget .td-icon-search:hover{color:#ffffff}.td-header-wrap .td-header-sp-top-widget i.td-icon-font:hover{color:#ffffff}.td-header-wrap .td-header-menu-wrap-full,.td-header-menu-wrap.td-affix,.td-header-style-3 .td-header-main-menu,.td-header-style-3 .td-affix .td-header-main-menu,.td-header-style-4 .td-header-main-menu,.td-header-style-4 .td-affix .td-header-main-menu,.td-header-style-8 .td-header-menu-wrap.td-affix,.td-header-style-8 .td-header-top-menu-full{background-color:#ff6c0e}.td-boxed-layout .td-header-style-3 .td-header-menu-wrap,.td-boxed-layout .td-header-style-4 .td-header-menu-wrap,.td-header-style-3 .td_stretch_content .td-header-menu-wrap,.td-header-style-4 .td_stretch_content .td-header-menu-wrap{background-color:#ff6c0e!important}@media (min-width:1019px){.td-header-style-1 .td-header-sp-recs,.td-header-style-1 .td-header-sp-logo{margin-bottom:28px}}@media (min-width:768px) and (max-width:1018px){.td-header-style-1 .td-header-sp-recs,.td-header-style-1 .td-header-sp-logo{margin-bottom:14px}}.td-header-style-7 .td-header-top-menu{border-bottom:none}.block-title>span,.block-title>a,.widgettitle,body .td-trending-now-title,.wpb_tabs li a,.vc_tta-container .vc_tta-color-grey.vc_tta-tabs-position-top.vc_tta-style-classic .vc_tta-tabs-container .vc_tta-tab>a,.td-theme-wrap .td-related-title a,.woocommerce div.product .woocommerce-tabs ul.tabs li a,.woocommerce .product .products h2:not(.woocommerce-loop-product__title),.td-theme-wrap .td-block-title{text-transform:capitalize}.td-theme-slider.iosSlider-col-1 .td-module-title{text-transform:capitalize}.td-theme-slider.iosSlider-col-2 .td-module-title{text-transform:capitalize}.td-theme-slider.iosSlider-col-3 .td-module-title{text-transform:capitalize}.homepage-post .td-post-template-8 .td-post-header .entry-title{text-transform:capitalize}.td_module_1 .td-module-title{text-transform:capitalize}.td_module_2 .td-module-title{text-transform:capitalize}.td_module_3 .td-module-title{text-transform:capitalize}.td_module_4 .td-module-title{text-transform:capitalize}.td_module_5 .td-module-title{text-transform:capitalize}.td_module_6 .td-module-title{text-transform:capitalize}.td_module_mx1 .td-module-title{text-transform:capitalize}.td_module_mx2 .td-module-title{text-transform:capitalize}.td_module_mx3 .td-module-title{text-transform:capitalize}.td_module_mx4 .td-module-title{text-transform:capitalize}.td-big-grid-post.td-big-thumb .td-big-grid-meta,.td-big-thumb .td-big-grid-meta .entry-title{text-transform:capitalize}.td-big-grid-post.td-medium-thumb .td-big-grid-meta,.td-medium-thumb .td-big-grid-meta .entry-title{text-transform:capitalize}.td-big-grid-post.td-small-thumb .td-big-grid-meta,.td-small-thumb .td-big-grid-meta .entry-title{text-transform:capitalize}.td-big-grid-post.td-tiny-thumb .td-big-grid-meta,.td-tiny-thumb .td-big-grid-meta .entry-title{text-transform:capitalize}.td-post-template-default .td-post-header .entry-title{text-transform:capitalize}.td-post-template-1 .td-post-header .entry-title{text-transform:capitalize}.td-post-template-2 .td-post-header .entry-title{text-transform:capitalize}.td-post-template-3 .td-post-header .entry-title{text-transform:capitalize}.td-post-template-4 .td-post-header .entry-title{text-transform:capitalize}.td-post-content h2{text-transform:capitalize}.td-page-title,.td-category-title-holder .td-page-title{text-transform:capitalize}:root{--td_theme_color:#ff6c0e;--td_slider_text:rgba(255,108,14,0.7);--td_mobile_menu_color:#ff6c0e;--td_mobile_gradient_one_mob:#333333;--td_mobile_gradient_two_mob:#333333;--td_mobile_text_active_color:#333333}.td-header-style-12 .td-header-menu-wrap-full,.td-header-style-12 .td-affix,.td-grid-style-1.td-hover-1 .td-big-grid-post:hover .td-post-category,.td-grid-style-5.td-hover-1 .td-big-grid-post:hover .td-post-category,.td_category_template_3 .td-current-sub-category,.td_category_template_8 .td-category-header .td-category a.td-current-sub-category,.td_category_template_4 .td-category-siblings .td-category a:hover,.td_block_big_grid_9.td-grid-style-1 .td-post-category,.td_block_big_grid_9.td-grid-style-5 .td-post-category,.td-grid-style-6.td-hover-1 .td-module-thumb:after,.tdm-menu-active-style5 .td-header-menu-wrap .sf-menu>.current-menu-item>a,.tdm-menu-active-style5 .td-header-menu-wrap .sf-menu>.current-menu-ancestor>a,.tdm-menu-active-style5 .td-header-menu-wrap .sf-menu>.current-category-ancestor>a,.tdm-menu-active-style5 .td-header-menu-wrap .sf-menu>li>a:hover,.tdm-menu-active-style5 .td-header-menu-wrap .sf-menu>.sfHover>a{background-color:#ff6c0e}.td_mega_menu_sub_cats .cur-sub-cat,.td-mega-span h3 a:hover,.td_mod_mega_menu:hover .entry-title a,.header-search-wrap .result-msg a:hover,.td-header-top-menu .td-drop-down-search .td_module_wrap:hover .entry-title a,.td-header-top-menu .td-icon-search:hover,.td-header-wrap .result-msg a:hover,.top-header-menu li a:hover,.top-header-menu .current-menu-item>a,.top-header-menu .current-menu-ancestor>a,.top-header-menu .current-category-ancestor>a,.td-social-icon-wrap>a:hover,.td-header-sp-top-widget .td-social-icon-wrap a:hover,.td_mod_related_posts:hover h3>a,.td-post-template-11 .td-related-title .td-related-left:hover,.td-post-template-11 .td-related-title .td-related-right:hover,.td-post-template-11 .td-related-title .td-cur-simple-item,.td-post-template-11 .td_block_related_posts .td-next-prev-wrap a:hover,.td-category-header .td-pulldown-category-filter-link:hover,.td-category-siblings .td-subcat-dropdown a:hover,.td-category-siblings .td-subcat-dropdown a.td-current-sub-category,.footer-text-wrap .footer-email-wrap a,.footer-social-wrap a:hover,.td_module_17 .td-read-more a:hover,.td_module_18 .td-read-more a:hover,.td_module_19 .td-post-author-name a:hover,.td-pulldown-syle-2 .td-subcat-dropdown:hover .td-subcat-more span,.td-pulldown-syle-2 .td-subcat-dropdown:hover .td-subcat-more i,.td-pulldown-syle-3 .td-subcat-dropdown:hover .td-subcat-more span,.td-pulldown-syle-3 .td-subcat-dropdown:hover .td-subcat-more i,.tdm-menu-active-style3 .tdm-header.td-header-wrap .sf-menu>.current-category-ancestor>a,.tdm-menu-active-style3 .tdm-header.td-header-wrap .sf-menu>.current-menu-ancestor>a,.tdm-menu-active-style3 .tdm-header.td-header-wrap .sf-menu>.current-menu-item>a,.tdm-menu-active-style3 .tdm-header.td-header-wrap .sf-menu>.sfHover>a,.tdm-menu-active-style3 .tdm-header.td-header-wrap .sf-menu>li>a:hover{color:#ff6c0e}.td-mega-menu-page .wpb_content_element ul li a:hover,.td-theme-wrap .td-aj-search-results .td_module_wrap:hover .entry-title a,.td-theme-wrap .header-search-wrap .result-msg a:hover{color:#ff6c0e!important}.td_category_template_8 .td-category-header .td-category a.td-current-sub-category,.td_category_template_4 .td-category-siblings .td-category a:hover,.tdm-menu-active-style4 .tdm-header .sf-menu>.current-menu-item>a,.tdm-menu-active-style4 .tdm-header .sf-menu>.current-menu-ancestor>a,.tdm-menu-active-style4 .tdm-header .sf-menu>.current-category-ancestor>a,.tdm-menu-active-style4 .tdm-header .sf-menu>li>a:hover,.tdm-menu-active-style4 .tdm-header .sf-menu>.sfHover>a{border-color:#ff6c0e}.td-header-wrap .td-header-top-menu-full,.td-header-wrap .top-header-menu .sub-menu,.tdm-header-style-1.td-header-wrap .td-header-top-menu-full,.tdm-header-style-1.td-header-wrap .top-header-menu .sub-menu,.tdm-header-style-2.td-header-wrap .td-header-top-menu-full,.tdm-header-style-2.td-header-wrap .top-header-menu .sub-menu,.tdm-header-style-3.td-header-wrap .td-header-top-menu-full,.tdm-header-style-3.td-header-wrap .top-header-menu .sub-menu{background-color:#ff6c0e}.td-header-style-8 .td-header-top-menu-full{background-color:transparent}.td-header-style-8 .td-header-top-menu-full .td-header-top-menu{background-color:#ff6c0e;padding-left:15px;padding-right:15px}.td-header-wrap .td-header-top-menu-full .td-header-top-menu,.td-header-wrap .td-header-top-menu-full{border-bottom:none}.td-header-top-menu,.td-header-top-menu a,.td-header-wrap .td-header-top-menu-full .td-header-top-menu,.td-header-wrap .td-header-top-menu-full a,.td-header-style-8 .td-header-top-menu,.td-header-style-8 .td-header-top-menu a,.td-header-top-menu .td-drop-down-search .entry-title a{color:#ffffff}.top-header-menu .current-menu-item>a,.top-header-menu .current-menu-ancestor>a,.top-header-menu .current-category-ancestor>a,.top-header-menu li a:hover,.td-header-sp-top-widget .td-icon-search:hover{color:#ffffff}.td-header-wrap .td-header-sp-top-widget i.td-icon-font:hover{color:#ffffff}.td-header-wrap .td-header-menu-wrap-full,.td-header-menu-wrap.td-affix,.td-header-style-3 .td-header-main-menu,.td-header-style-3 .td-affix .td-header-main-menu,.td-header-style-4 .td-header-main-menu,.td-header-style-4 .td-affix .td-header-main-menu,.td-header-style-8 .td-header-menu-wrap.td-affix,.td-header-style-8 .td-header-top-menu-full{background-color:#ff6c0e}.td-boxed-layout .td-header-style-3 .td-header-menu-wrap,.td-boxed-layout .td-header-style-4 .td-header-menu-wrap,.td-header-style-3 .td_stretch_content .td-header-menu-wrap,.td-header-style-4 .td_stretch_content .td-header-menu-wrap{background-color:#ff6c0e!important}@media (min-width:1019px){.td-header-style-1 .td-header-sp-recs,.td-header-style-1 .td-header-sp-logo{margin-bottom:28px}}@media (min-width:768px) and (max-width:1018px){.td-header-style-1 .td-header-sp-recs,.td-header-style-1 .td-header-sp-logo{margin-bottom:14px}}.td-header-style-7 .td-header-top-menu{border-bottom:none}.block-title>span,.block-title>a,.widgettitle,body .td-trending-now-title,.wpb_tabs li a,.vc_tta-container .vc_tta-color-grey.vc_tta-tabs-position-top.vc_tta-style-classic .vc_tta-tabs-container .vc_tta-tab>a,.td-theme-wrap .td-related-title a,.woocommerce div.product .woocommerce-tabs ul.tabs li a,.woocommerce .product .products h2:not(.woocommerce-loop-product__title),.td-theme-wrap .td-block-title{text-transform:capitalize}.td-theme-slider.iosSlider-col-1 .td-module-title{text-transform:capitalize}.td-theme-slider.iosSlider-col-2 .td-module-title{text-transform:capitalize}.td-theme-slider.iosSlider-col-3 .td-module-title{text-transform:capitalize}.homepage-post .td-post-template-8 .td-post-header .entry-title{text-transform:capitalize}.td_module_1 .td-module-title{text-transform:capitalize}.td_module_2 .td-module-title{text-transform:capitalize}.td_module_3 .td-module-title{text-transform:capitalize}.td_module_4 .td-module-title{text-transform:capitalize}.td_module_5 .td-module-title{text-transform:capitalize}.td_module_6 .td-module-title{text-transform:capitalize}.td_module_mx1 .td-module-title{text-transform:capitalize}.td_module_mx2 .td-module-title{text-transform:capitalize}.td_module_mx3 .td-module-title{text-transform:capitalize}.td_module_mx4 .td-module-title{text-transform:capitalize}.td-big-grid-post.td-big-thumb .td-big-grid-meta,.td-big-thumb .td-big-grid-meta .entry-title{text-transform:capitalize}.td-big-grid-post.td-medium-thumb .td-big-grid-meta,.td-medium-thumb .td-big-grid-meta .entry-title{text-transform:capitalize}.td-big-grid-post.td-small-thumb .td-big-grid-meta,.td-small-thumb .td-big-grid-meta .entry-title{text-transform:capitalize}.td-big-grid-post.td-tiny-thumb .td-big-grid-meta,.td-tiny-thumb .td-big-grid-meta .entry-title{text-transform:capitalize}.td-post-template-default .td-post-header .entry-title{text-transform:capitalize}.td-post-template-1 .td-post-header .entry-title{text-transform:capitalize}.td-post-template-2 .td-post-header .entry-title{text-transform:capitalize}.td-post-template-3 .td-post-header .entry-title{text-transform:capitalize}.td-post-template-4 .td-post-header .entry-title{text-transform:capitalize}.td-post-content h2{text-transform:capitalize}</style>
+
+<!-- LFX Segments Analytics -->
+<script src="https://lfx-segment.platform.linuxfoundation.org/latest/lfx-segment-analytics.min.js"></script>
+<script>
+  // Initialize with default configuration (no custom write key needed)
+  LfxAnalytics.LfxSegmentsAnalytics.getInstance().init();
+</script>
+
+
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "item": {
+                    "@type": "WebSite",
+                    "@id": "https://www.linux.com/",
+                    "name": "Home"
+                }
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                    "item": {
+                    "@type": "WebPage",
+                    "@id": "https://www.linux.com/what-is-linux/",
+                    "name": "What is Linux?"
+                }
+            }    
+        ]
+    }
+</script>
+
+<!-- Button style compiled by theme -->
+
+<style>.tdm-btn-style1{background-color:#ff6c0e}.tdm-btn-style2:before{border-color:#ff6c0e}.tdm-btn-style2{color:#ff6c0e}.tdm-btn-style3{-webkit-box-shadow:0 2px 16px #ff6c0e;-moz-box-shadow:0 2px 16px #ff6c0e;box-shadow:0 2px 16px #ff6c0e}.tdm-btn-style3:hover{-webkit-box-shadow:0 4px 26px #ff6c0e;-moz-box-shadow:0 4px 26px #ff6c0e;box-shadow:0 4px 26px #ff6c0e}</style>
+
+	<style id="tdw-css-placeholder"></style></head>
+
+<body class="wp-singular page-template-default page page-id-107157 wp-theme-Newspaper wp-child-theme-Newspaper-child td-standard-pack what-is-linux global-block-template-4 tdb-template td-full-layout" itemscope="itemscope" itemtype="https://schema.org/WebPage">
+
+<div class="td-scroll-up" data-style="style1"><i class="td-icon-menu-up"></i></div>
+    <div class="td-menu-background" style="visibility:hidden"></div>
+<div id="td-mobile-nav" style="visibility:hidden">
+    <div class="td-mobile-container">
+        <!-- mobile menu top section -->
+        <div class="td-menu-socials-wrap">
+            <!-- socials -->
+            <div class="td-menu-socials">
+                
+        <span class="td-social-icon-wrap">
+            <a target="_blank" href="https://twitter.com/linuxdotcom" title="X">
+                <i class="td-icon-font td-icon-twitter"></i>
+                <span style="display: none">X</span>
+            </a>
+        </span>            </div>
+            <!-- close button -->
+            <div class="td-mobile-close">
+                <span><i class="td-icon-close-mobile"></i></span>
+            </div>
+        </div>
+
+        <!-- login section -->
+        
+        <!-- menu section -->
+        <div class="td-mobile-content">
+            <div class="menu-primary-menu-container"><ul id="menu-primary-menu" class="td-mobile-main-menu"><li id="menu-item-579695" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-first menu-item-579695"><a href="https://linux.com/">Topic<i class="td-icon-menu-right td-element-after"></i></a>
+<ul class="sub-menu">
+	<li id="menu-item-577204" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-577204"><a href="https://www.linux.com/topic/ai-ml/">AI/ML</a></li>
+	<li id="menu-item-577207" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-577207"><a href="https://www.linux.com/topic/cloud/">Cloud</a></li>
+	<li id="menu-item-577208" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-577208"><a href="https://www.linux.com/topic/desktop/">Desktop</a></li>
+	<li id="menu-item-577211" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-577211"><a href="https://www.linux.com/topic/embedded-iot/">Embedded/IoT</a></li>
+	<li id="menu-item-577212" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-577212"><a href="https://www.linux.com/topic/governance/">Governance</a></li>
+	<li id="menu-item-577213" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-577213"><a href="https://www.linux.com/topic/hardware/">Hardware</a></li>
+	<li id="menu-item-577215" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-577215"><a href="https://www.linux.com/topic/linux/">Linux</a></li>
+	<li id="menu-item-577216" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-577216"><a href="https://www.linux.com/topic/networking/">Networking</a></li>
+	<li id="menu-item-577217" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-577217"><a href="https://www.linux.com/topic/open-source/">Open Source</a></li>
+	<li id="menu-item-577219" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-577219"><a href="https://www.linux.com/topic/security/">Security</a></li>
+	<li id="menu-item-577221" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-577221"><a href="https://www.linux.com/topic/system-administration/">System Administration</a></li>
+</ul>
+</li>
+<li id="menu-item-577276" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-577276"><a href="https://linux.com/">Audience<i class="td-icon-menu-right td-element-after"></i></a>
+<ul class="sub-menu">
+	<li id="menu-item-577235" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-577235"><a href="https://www.linux.com/audience/developers/">Developers</a></li>
+	<li id="menu-item-577236" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-577236"><a href="https://www.linux.com/audience/devops/">DevOps</a></li>
+	<li id="menu-item-577237" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-577237"><a href="https://www.linux.com/audience/enterprise/">Enterprise</a></li>
+	<li id="menu-item-579694" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-579694"><a href="https://www.linux.com/audience/enthusiast/">Enthusiast</a></li>
+</ul>
+</li>
+<li id="menu-item-577257" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-577257"><a href="https://linux.com/">Resources<i class="td-icon-menu-right td-element-after"></i></a>
+<ul class="sub-menu">
+	<li id="menu-item-577289" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-577289"><a href="/tutorials">Tutorials</a></li>
+	<li id="menu-item-577260" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-577260"><a target="_blank" href="https://training.linuxfoundation.org/">Training</a></li>
+	<li id="menu-item-577261" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-577261"><a target="_blank" href="https://training.linuxfoundation.org/full-catalog/?_sft_product_type=certification">Certification</a></li>
+	<li id="menu-item-577259" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-577259"><a target="_blank" href="https://events.linuxfoundation.org/">Events</a></li>
+	<li id="menu-item-577256" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-577256"><a target="_blank" href="https://forum.linuxfoundation.org/">Forums</a></li>
+	<li id="menu-item-577274" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-577274"><a href="https://www.linux.com/qa/">Q&#038;A</a></li>
+	<li id="menu-item-577268" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-107157 current_page_item menu-item-577268"><a href="https://www.linux.com/what-is-linux/">What is Linux?</a></li>
+</ul>
+</li>
+<li id="menu-item-577025" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-577025"><a href="https://www.linux.com/about/">About Us</a></li>
+</ul></div>        </div>
+    </div>
+
+    <!-- register/login section -->
+    </div><div class="td-search-background" style="visibility:hidden"></div>
+<div class="td-search-wrap-mob" style="visibility:hidden">
+	<div class="td-drop-down-search">
+		<form method="get" class="td-search-form" action="https://www.linux.com/">
+			<!-- close button -->
+			<div class="td-search-close">
+				<span><i class="td-icon-close-mobile"></i></span>
+			</div>
+			<div role="search" class="td-search-input">
+				<span>Search</span>
+				<input id="td-header-search-mob" type="text" value="" name="s" autocomplete="off" />
+			</div>
+		</form>
+		<div id="td-aj-search-mob" class="td-ajax-search-flex"></div>
+	</div>
+</div>
+
+    <div id="td-outer-wrap" class="td-theme-wrap">
+    
+        
+            <div class="tdc-header-wrap ">
+
+            <!--
+Header style 6
+-->
+
+
+<div class="td-header-wrap td-header-style-6 ">
+    
+    <div class="td-header-top-menu-full td-container-wrap ">
+        <div class="td-container td-header-row td-header-top-menu">
+            <!-- LOGIN MODAL -->
+
+                <div id="login-form" class="white-popup-block mfp-hide mfp-with-anim td-login-modal-wrap">
+                    <div class="td-login-wrap">
+                        <a href="#" aria-label="Back" class="td-back-button"><i class="td-icon-modal-back"></i></a>
+                        <div id="td-login-div" class="td-login-form-div td-display-block">
+                            <div class="td-login-panel-title">Sign in</div>
+                            <div class="td-login-panel-descr">Welcome! Log into your account</div>
+                            <div class="td_display_err"></div>
+                            <form id="loginForm" action="#" method="post">
+                                <div class="td-login-inputs"><input class="td-login-input" autocomplete="username" type="text" name="login_email" id="login_email" value="" required><label for="login_email">your username</label></div>
+                                <div class="td-login-inputs"><input class="td-login-input" autocomplete="current-password" type="password" name="login_pass" id="login_pass" value="" required><label for="login_pass">your password</label></div>
+                                <input type="button"  name="login_button" id="login_button" class="wpb_button btn td-login-button" value="Login">
+                                
+                            </form>
+
+                            
+
+                            <div class="td-login-info-text"><a href="#" id="forgot-pass-link">Forgot your password? Get help</a></div>
+                            
+                            
+                            
+                            
+                        </div>
+
+                        
+
+                         <div id="td-forgot-pass-div" class="td-login-form-div td-display-none">
+                            <div class="td-login-panel-title">Password recovery</div>
+                            <div class="td-login-panel-descr">Recover your password</div>
+                            <div class="td_display_err"></div>
+                            <form id="forgotpassForm" action="#" method="post">
+                                <div class="td-login-inputs"><input class="td-login-input" type="text" name="forgot_email" id="forgot_email" value="" required><label for="forgot_email">your email</label></div>
+                                <input type="button" name="forgot_button" id="forgot_button" class="wpb_button btn td-login-button" value="Send My Password">
+                            </form>
+                            <div class="td-login-info-text">A password will be e-mailed to you.</div>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+                        </div>
+    </div>
+
+    <div class="td-header-menu-wrap-full td-container-wrap ">
+        
+        <div class="td-header-menu-wrap ">
+            <div class="td-container td-header-row td-header-main-menu black-menu">
+                <div class="td-header-menu-social">
+        <span class="td-social-icon-wrap">
+            <a target="_blank" href="https://twitter.com/linuxdotcom" title="X">
+                <i class="td-icon-font td-icon-twitter"></i>
+                <span style="display: none">X</span>
+            </a>
+        </span></div>
+    <div class="header-search-wrap">
+        <div class="td-search-btns-wrap">
+            <a id="td-header-search-button" href="#" aria-label="Search" role="button" class="dropdown-toggle " data-toggle="dropdown"><i class="td-icon-search"></i></a>
+                            <a id="td-header-search-button-mob" href="#" aria-label="Search" class="dropdown-toggle " data-toggle="dropdown"><i class="td-icon-search"></i></a>
+                    </div>
+
+        <div class="td-drop-down-search" aria-labelledby="td-header-search-button">
+            <form method="get" class="td-search-form" action="https://www.linux.com/">
+                <div role="search" class="td-head-form-search-wrap">
+                    <input id="td-header-search" type="text" value="" name="s" autocomplete="off" /><input class="wpb_button wpb_btn-inverse btn" type="submit" id="td-header-search-top" value="Search" />
+                </div>
+            </form>
+            <div id="td-aj-search"></div>
+        </div>
+    </div>
+
+<div id="td-header-menu" role="navigation">
+        <div id="td-top-mobile-toggle"><a href="#" role="button" aria-label="Menu"><i class="td-icon-font td-icon-mobile"></i></a></div>
+        <div class="td-main-menu-logo td-logo-in-menu">
+                    <a class="td-main-logo" href="https://www.linux.com/">
+                <img src="https://www.linux.com/wp-content/uploads/2019/08/ldc-white-272.png" alt="Linux.com" title="Linux.com"  width="272" height="90"/>
+                <span class="td-visual-hidden">Linux.com</span>
+            </a>
+            </div>
+    <div class="menu-primary-menu-container"><ul id="menu-primary-menu-1" class="sf-menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-first td-menu-item td-normal-menu menu-item-579695"><a href="https://linux.com/">Topic</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category td-menu-item td-normal-menu menu-item-577204"><a href="https://www.linux.com/topic/ai-ml/">AI/ML</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category td-menu-item td-normal-menu menu-item-577207"><a href="https://www.linux.com/topic/cloud/">Cloud</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category td-menu-item td-normal-menu menu-item-577208"><a href="https://www.linux.com/topic/desktop/">Desktop</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category td-menu-item td-normal-menu menu-item-577211"><a href="https://www.linux.com/topic/embedded-iot/">Embedded/IoT</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category td-menu-item td-normal-menu menu-item-577212"><a href="https://www.linux.com/topic/governance/">Governance</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category td-menu-item td-normal-menu menu-item-577213"><a href="https://www.linux.com/topic/hardware/">Hardware</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category td-menu-item td-normal-menu menu-item-577215"><a href="https://www.linux.com/topic/linux/">Linux</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category td-menu-item td-normal-menu menu-item-577216"><a href="https://www.linux.com/topic/networking/">Networking</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category td-menu-item td-normal-menu menu-item-577217"><a href="https://www.linux.com/topic/open-source/">Open Source</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category td-menu-item td-normal-menu menu-item-577219"><a href="https://www.linux.com/topic/security/">Security</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category td-menu-item td-normal-menu menu-item-577221"><a href="https://www.linux.com/topic/system-administration/">System Administration</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children td-menu-item td-normal-menu menu-item-577276"><a href="https://linux.com/">Audience</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category td-menu-item td-normal-menu menu-item-577235"><a href="https://www.linux.com/audience/developers/">Developers</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category td-menu-item td-normal-menu menu-item-577236"><a href="https://www.linux.com/audience/devops/">DevOps</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category td-menu-item td-normal-menu menu-item-577237"><a href="https://www.linux.com/audience/enterprise/">Enterprise</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category td-menu-item td-normal-menu menu-item-579694"><a href="https://www.linux.com/audience/enthusiast/">Enthusiast</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children td-menu-item td-normal-menu menu-item-577257"><a href="https://linux.com/">Resources</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-custom menu-item-object-custom td-menu-item td-normal-menu menu-item-577289"><a href="/tutorials">Tutorials</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom td-menu-item td-normal-menu menu-item-577260"><a target="_blank" href="https://training.linuxfoundation.org/">Training</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom td-menu-item td-normal-menu menu-item-577261"><a target="_blank" href="https://training.linuxfoundation.org/full-catalog/?_sft_product_type=certification">Certification</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom td-menu-item td-normal-menu menu-item-577259"><a target="_blank" href="https://events.linuxfoundation.org/">Events</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom td-menu-item td-normal-menu menu-item-577256"><a target="_blank" href="https://forum.linuxfoundation.org/">Forums</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page td-menu-item td-normal-menu menu-item-577274"><a href="https://www.linux.com/qa/">Q&#038;A</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-107157 current_page_item td-menu-item td-normal-menu menu-item-577268"><a href="https://www.linux.com/what-is-linux/">What is Linux?</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page td-menu-item td-normal-menu menu-item-577025"><a href="https://www.linux.com/about/">About Us</a></li>
+</ul></div></div>
+
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+            </div>
+
+            
+
+
+<div class="td-main-content-wrap td-container-wrap ">
+    <div class="td-container tdc-content-wrap ">
+        <div class="td-crumb-container">
+            <div class="entry-crumbs"><span><a title="" class="entry-crumb" href="https://www.linux.com/">Home</a></span> <i class="td-icon-right td-bread-sep td-bred-no-url-last"></i> <span class="td-bred-no-url-last">What is Linux?</span></div>        </div>
+        <div class="td-pb-row">
+                                <div class="td-pb-span12 td-main-content" role="main">
+
+                                                        <div class="td-page-header">
+                                    <h1 class="entry-title td-page-title">
+                                        <span>What is Linux?</span>
+                                    </h1>
+                                </div>
+                                <div class="td-page-content tagdiv-type">
+                                <p><em>Looking to get started in Linux? Develop a good working knowledge of Linux using both the graphical interface and command line across the major Linux distribution families with The Linux Foundation&#8217;s <a href="https://training.linuxfoundation.org/training/introduction-to-linux/?utm_source=linuxcom&amp;utm_medium=blog&amp;utm_campaign=lfs101" target="_blank" rel="noopener">Intro to Linux</a> online course. Enroll for free <a href="https://training.linuxfoundation.org/training/introduction-to-linux/?utm_source=linuxcom&amp;utm_medium=blog&amp;utm_campaign=lfs101" target="_blank" rel="noopener">here</a>. (Este curso también está disponible en español. <a href="https://training.linuxfoundation.org/training/introduccion-a-linux-lf-upv-101x/">Haga clic aquí para Introducción a Linux.</a>)</em></p>
+<p>From smartphones to cars, supercomputers and home appliances, home desktops to enterprise servers, the Linux operating system is everywhere.</p>
+<p>Linux has been around since the mid-1990s and has since reached a user-base that spans the globe. Linux is actually everywhere: It&#8217;s in your phones, your thermostats, in your cars, refrigerators, Roku devices, and televisions. It also runs most of the Internet, all of the world&#8217;s top 500 supercomputers, and the world&#8217;s stock exchanges.</p>
+<p>But besides being the platform of choice to run desktops, servers, and embedded systems across the globe, Linux is one of the most reliable, secure and worry-free operating systems available.</p>
+<p>Here is all the information you need to get up to speed on the Linux platform.</p>
+<h2>What is Linux?</h2>
+<p>Just like Windows, iOS, and Mac OS, Linux is an operating system. In fact, one of the most popular platforms on the planet, Android, is powered by the Linux operating system. An operating system is software that manages all of the hardware resources associated with your desktop or laptop. To put it simply, the operating system manages the communication between your software and your hardware. Without the operating system (OS), the software wouldn&#8217;t function.</p>
+<p>The Linux operating system comprises several different pieces:</p>
+
+
+<div>
+<ol>
+<li><strong>Bootloader &#8211;&nbsp;</strong> The software that manages the boot process of your computer. For most users, this will simply be a splash screen that pops up and eventually goes away to boot into the operating system.</li>
+<li><strong>Kernel &#8211;</strong> This is the one piece of the whole that is actually called &#8216;Linux&#8217;. The kernel is the core of the system and manages the CPU, memory, and peripheral devices. The kernel is the lowest level of the OS.</li>
+<li><strong>Init system &#8211;</strong> This is a sub-system that bootstraps the user space and is charged with controlling daemons. One of the most widely used init systems is systemd, which also happens to be one of the most controversial. It is the init system that manages the boot process, once the initial booting is handed over from the bootloader (i.e., GRUB or GRand Unified Bootloader).</li>
+<li><strong>Daemons &#8211;</strong> These are background services (printing, sound, scheduling, etc.) that either start up during boot or after you log into the desktop.</li>
+<li><strong>Graphical server &#8211;</strong> This is the sub-system that displays the graphics on your monitor. It is commonly referred to as the X server or just X.</li>
+<li><strong>Desktop environment &#8211;</strong> This is the piece that the users actually interact with. There are many desktop environments to choose from (GNOME, Cinnamon, Mate, Pantheon, Enlightenment, KDE, Xfce, etc.). Each desktop environment includes built-in applications (such as file managers, configuration tools, web browsers, and games).</li>
+<li><strong>Applications &#8211;</strong> Desktop environments do not offer the full array of apps. Just like Windows and macOS, Linux offers thousands upon thousands of high-quality software titles that can be easily found and installed. Most modern Linux distributions (more on this below) include App Store-like tools that centralize and simplify application installation. For example, Ubuntu Linux has the Ubuntu Software Center (a rebrand of GNOME Software) which allows you to quickly search among the thousands of apps and install them from one centralized location.</li>
+</ol>
+</div>
+
+
+<h2>Why use Linux?</h2>
+<div>
+<div>
+<p>This is the one question that most people ask. Why bother learning a completely different computing environment, when the operating system that ships with most desktops, laptops, and servers works just fine?</p>
+<p>To answer that question, I would pose another question. Does that operating system you&#8217;re currently using really work &#8220;just fine&#8221;? Or, do you find yourself battling obstacles like viruses, malware, slow downs, crashes, costly repairs, and licensing fees?<br />If you struggle with the above, Linux might be the perfect platform for you. Linux has evolved into one of the most reliable computer ecosystems on the planet. Combine that reliability with zero cost of entry and you have the perfect solution for a desktop platform.</p>
+<p>That&#8217;s right, zero cost of entry&#8230; as in free. You can install Linux on as many computers as you like without paying a cent for software or server licensing.</p>
+</div>
+</div>
+<p><!-- /wp:post-content --></p>
+<p>Let&#8217;s take a look at the cost of a Linux server in comparison to Windows Server 2016. The price of the Windows Server 2016 Standard edition is $882.00 USD (purchased directly from Microsoft). That doesn&#8217;t include Client Access License (CALs) and licenses for other software you may need to run (such as a database, a web server, mail server, etc.). For example, a single user CAL, for Windows Server 2016, costs $38.00. If you need to add 10 users, for example, that&#8217;s $388.00 more dollars for server software licensing.  With the Linux server, it&#8217;s all free and easy to install. In fact, installing a full-blown web server (that includes a database server), is just a few clicks or commands away (take a look at Easy LAMP Server Installation to get an idea how simple it can be).</p>
+<p>If zero cost isn&#8217;t enough to win you over&#8211;what about having an operating system that will work, trouble free, for as long as you use it? I&#8217;ve used Linux for nearly 20 years (as both a desktop and server platform) and have not had any issues with ransomware, malware, or viruses. Linux is generally far less vulnerable to such attacks. As for server reboots, they&#8217;re only necessary if the kernel is updated. It is not out of the ordinary for a Linux server to go years without being rebooted. If you follow the regular recommended updates, stability and dependability are practically assured.</p>
+<h2>Open source</h2>
+<p>Linux is also distributed under an open source license. Open source follows these key tenets:</p>
+<ul>
+<li>The freedom to run the program, for any purpose.</li>
+<li>The freedom to study how the program works, and change it to make it do what you wish.</li>
+<li>The freedom to redistribute copies so you can help your neighbor.</li>
+<li>The freedom to distribute copies of your modified versions to others.</li>
+</ul>
+<p>These points are crucial to understanding the community that works together to create the Linux platform. Without a doubt, Linux is an operating system that is &#8220;by the people, for the people&#8221;. These tenets are also a main factor in why many people choose Linux. It&#8217;s about freedom and freedom of use and freedom of choice.</p>
+<h2>What is a &#8220;distribution?&#8221;</h2>
+<p>Linux has a number of different versions to suit any type of user. From new users to hard-core users, you&#8217;ll find a &#8220;flavor&#8221; of Linux to match your needs. These versions are called distributions (or, in the short form, &#8220;distros&#8221;). Nearly every distribution of Linux can be downloaded for free, burned onto disk (or USB thumb drive), and installed (on as many machines as you like).</p>
+<p>Popular Linux distributions include:</p>
+<ul>
+<li>LINUX MINT</li>
+<li>MANJARO</li>
+<li>DEBIAN</li>
+<li>UBUNTU</li>
+<li>ANTERGOS</li>
+<li>SOLUS</li>
+<li>FEDORA</li>
+<li>ELEMENTARY OS</li>
+<li>OPENSUSE</li>
+</ul>
+<p>Each distribution has a different take on the desktop. Some opt for very modern user interfaces (such as GNOME and Elementary OS&#8217;s Pantheon), whereas others stick with a more traditional desktop environment (openSUSE uses KDE).</p>
+<p>You can check out the top 100 distributions on the <a href="https://distrowatch.com">Distrowatch</a>.</p>
+<p>And don&#8217;t think the server has been left behind. For this arena, you can turn to:</p>
+<ul>
+<li>Red Hat Enterprise Linux</li>
+<li>Ubuntu Server</li>
+<li>Centos</li>
+<li>SUSE Enterprise Linux</li>
+</ul>
+<p>Some of the above server distributions are free (such as Ubuntu Server and CentOS) and some have an associated price (such as Red Hat Enterprise Linux and SUSE Enterprise Linux). Those with an associated price also include support.</p>
+<h2>Which distribution is right for you?</h2>
+<p>Which distribution you use will depend on the answer to three simple questions:</p>
+<ul>
+<li>How skilled of a computer user are you?</li>
+<li>Do you prefer a modern or a standard desktop interface?</li>
+<li>Server or desktop?</li>
+</ul>
+<p>If your computer skills are fairly basic, you&#8217;ll want to stick with a newbie-friendly distribution such as Linux Mint, Ubuntu (Figure 3), Elementary OS or Deepin. If your skill set extends into the above-average range, you could go with a distribution like Debian or Fedora. If, however, you&#8217;ve pretty much mastered the craft of computer and system administration, use a distribution like Gentoo. If you really want a challenge, you can build your very own Linux distribution, with the help of Linux From Scratch.</p>
+<p>If you&#8217;re looking for a server-only distribution, you will also want to decide if you need a desktop interface, or if you want to do this via command-line only. The Ubuntu Server does not install a GUI interface. This means two things your server won&#8217;t be bogged down loading graphics and you&#8217;ll need to have a solid understanding of the Linux command line. However, you can install a GUI package on top of the Ubuntu Server with a single command like sudo apt-get install ubuntu-desktop. System administrators will also want to view a distribution with regards to features. Do you want a server-specific distribution that will offer you, out of the box, everything you need for your server? If so, CentOS might be the best choice. Or, do you want to take a desktop distribution and add the pieces as you need them? If so, Debian or Ubuntu Linux might serve you well.</p>
+<h2>Installing Linux</h2>
+<p>For many people, the idea of installing an operating system might seem like a very daunting task. Believe it or not, Linux offers one of the easiest installations of all operating systems. In fact, most versions of Linux offer what is called a Live distribution, which means you run the operating system from either a CD/DVD or USB flash drive without making any changes to your hard drive. You get the full functionality without having to commit to the installation. Once you&#8217;ve tried it out, and decided you wanted to use it, you simply double-click the &#8220;Install&#8221; icon and walk through the simple installation wizard.</p>
+<p>Typically, the installation wizards walk you through the process with the following steps (We&#8217;ll illustrate the installation of Ubuntu Linux): </p>
+<p><!-- wp:list --></p>
+<ul>
+<li>Preparation: Make sure your machine meets the requirements for installation. This also may ask you if you want to install third-party software (such as plugins for MP3 playback, video codecs, and more).</li>
+<li>Wireless setup (if necessary): If you are using a laptop (or machine with wireless), you&#8217;ll need to connect to the network, in order to download third-party software and updates.</li>
+<li>Hard drive allocation (Figure 4): This step allows you to select how you want the operating system to be installed. Are you going to install Linux alongside another operating system (called &#8220;dual booting&#8221;), use the entire hard drive, upgrade an existing Linux installation, or install over an existing version of Linux.</li>
+<li>Location: Select your location from the map.</li>
+<li>Keyboard layout: Select the keyboard for your system.</li>
+<li>User setup: Set up your username and password.</li>
+</ul>
+<p>That&#8217;s it. Once the system has completed the installation, reboot and you&#8217;re ready to go. For a more in-depth guide to installing Linux, take a look at &#8220;How to Install and Try Linux the Absolutely Easiest and Safest Way&#8221; or download the Linux Foundation&#8217;s PDF guide for Linux installation.</p>
+<p><!-- wp:gallery /--></p>
+<p><!-- wp:radish-guten-blocks/highlighted-event-banner /--></p>
+<h2>Installing software on Linux</h2>
+<p>Just as the operating system itself is easy to install, so too are applications. Most modern Linux distributions include what most would consider an app store. This is a centralized location where software can be searched and installed. Ubuntu Linux (and many other distributions) rely on GNOME Software, Elementary OS has the AppCenter, Deepin has the Deepin Software Center, openSUSE has their AppStore, and some distributions rely on Synaptic.</p>
+<p>Regardless of the name, each of these tools do the same thing: a central place to search for and install Linux software. Of course, these pieces of software depend upon the presence of a GUI. For GUI-less servers, you will have to depend upon the command-line interface for installation.</p>
+<p>Let&#8217;s look at two different tools to illustrate how easy even the command line installation can be. Our examples are for Debian-based distributions and Fedora-based distributions. The Debian-based distros will use the apt-get tool for installing software and Fedora-based distros will require the use of the yum tool. Both work very similarly. We&#8217;ll illustrate using the apt-get command. Let&#8217;s say you want to install the wget tool (which is a handy tool used to download files from the command line). To install this using apt-get, the command would like like this:</p>
+<pre>sudo apt-get install wget</pre>
+<p>The sudo command is added because you need super user privileges in order to install software. Similarly, to install the same software on a Fedora-based distribution, you would first su to the super user (literally issue the command su and enter the root password), and issue this command:</p>
+<pre>yum install wget</pre>
+<p>That&#8217;s all there is to installing software on a Linux machine. It&#8217;s not nearly as challenging as you might think. Still in doubt? Recall the Easy Lamp Server Installation from earlier. With a single command:</p>
+<pre>sudo taskel</pre>
+<p>You can install a complete LAMP (Linux Apache MySQL PHP) server on either a server or desktop distribution. It really is that easy.</p>
+<h2>More resources</h2>
+<p>If you&#8217;re looking for one of the most reliable, secure, and dependable platforms for both the desktop and the server, look no further than one of the many Linux distributions. With Linux you can assure your desktops will be free of trouble, your servers up, and your support requests minimal.</p>
+<p><!-- wp:paragraph --></p>
+<p>For more information to help guide you through your lifetime with Linux, check out the following resources:</p>
+<p><!-- wp:radish-guten-blocks/unbulleted-list --></p>
+<ul>
+<li><a href="https://www.linux.com/">Linux.com</a>: Everything you need to know about Linux  (news, tutorials and more)</li>
+<li><a href="https://www.howtoforge.com/">Howtoforge</a>: Linux tutorials</li>
+<li><a href="http://www.tldp.org/">Linux Documentation Project</a>: How-tos, guides, and FAQs</li>
+<li><a href="http://www.linux-tutorial.info/">Linux Knowledge Base and Tutorial</a>: Plenty of tutorials and in-depth guides</li>
+<li><a href="https://lwn.net/">LWN.net</a>: Linux kernel news and more</li>
+</ul>
+<p><!-- /wp:radish-guten-blocks/unbulleted-list --></p><!-- /wp:paragraph -->                        </div>
+                                            </div>
+                            </div> <!-- /.td-pb-row -->
+    </div> <!-- /.td-container -->
+</div> <!-- /.td-main-content-wrap -->
+
+    
+	
+	
+            <div class="tdc-footer-wrap ">
+
+                <!-- Footer -->
+				
+                <!-- Sub Footer -->
+				    <div class="td-sub-footer-container td-container-wrap ">
+        <div class="td-container">
+            <div class="td-pb-row">
+                <div class="td-pb-span td-sub-footer-menu">
+                                    </div>
+
+                <div class="td-pb-span td-sub-footer-copy">
+                    <div class="td-pb-row">
+   <div class="td-pb-span10">
+      <aside class="footer-text-wrap">
+Copyright © 2026 The Linux Foundation®. All rights reserved. The Linux Foundation has registered trademarks and uses trademarks. For a list of trademarks of The Linux Foundation, please see our <a href="https://www.linuxfoundation.org/trademark-usage">Trademark Usage</a> page. Linux is a registered trademark of Linus Torvalds.
+      </aside>
+   </div>
+   <div class="td-pb-span2">
+         <a target="_blank" href="https://twitter.com/linuxdotcom" title="Twitter">
+         <i class="td-icon-font td-icon-twitter"></i>
+         </a>
+   </div>
+</div>                </div>
+            </div>
+        </div>
+    </div>
+            </div><!--close td-footer-wrap-->
+			
+
+</div><!--close td-outer-wrap-->
+
+
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/Newspaper-child/*","/wp-content/themes/Newspaper/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+
+<!-- GTM Container placement set to footer -->
+<!-- Google Tag Manager (noscript) -->
+				<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NXGNZW" height="0" width="0" style="display:none;visibility:hidden" aria-hidden="true"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) --><style type="text/css"> 
+         /* Hide reCAPTCHA V3 badge */
+        .grecaptcha-badge {
+        
+            visibility: hidden !important;
+        
+        }
+    </style>
+
+    <!--
+
+        Theme: Newspaper by tagDiv.com 2026
+        Version: 12.7.8 (rara)
+        Deploy mode: deploy
+        
+        uid: 6ad9dcd495b55
+    -->
+
+    
+<!-- Custom css from theme panel -->
+<style type="text/css" media="screen">.td-grid-style-2 .td-big-grid-post-0 .td-module-thumb a:last-child:before,.td-grid-style-3 .td-big-grid-post-0 .td-module-thumb a:last-child:before{background:linear-gradient(45deg,#4db2ec 0%,#4a8f5e 100%)}.td-grid-style-3 .td-module-thumb a:last-child:before{opacity:0.2}.td-header-style-6 .td-header-menu-social{margin-left:44px;margin-right:44px;line-height:80px}.td-header-menu-social .td-social-icon-wrap i{font-size:20px}.td-pb-span.td-sub-footer-copy i.td-icon-font.td-icon-twitter{font-size:20px;padding:10px!important;display:inline-block}.td-scroll-up.td-hide-scroll-up-on-mob{display:none}</style>
+
+<script id="mpp_gutenberg_tabs-js" src="https://www.linux.com/wp-content/plugins/profile-builder/add-ons-free/user-profile-picture/js/mpp-frontend.js?ver=2.6.0"></script>
+<script id="gtm4wp-form-move-tracker-js-before">
+var gtm4wp_form_move_config = {"filledOnly":false};
+//# sourceURL=gtm4wp-form-move-tracker-js-before
+</script>
+<script data-wp-strategy="defer" defer id="gtm4wp-form-move-tracker-js" src="https://www.linux.com/wp-content/plugins/duracelltomi-google-tag-manager/build/gtm4wp-form-move-tracker.js?ver=2.0.2"></script>
+<script id="td-site-min-js" src="https://www.linux.com/wp-content/plugins/td-composer/legacy/Newspaper/js/tagdiv_theme.min.js?ver=12.7.8"></script>
+<script id="tdPostImages-js" src="https://www.linux.com/wp-content/plugins/td-composer/legacy/Newspaper/js/tdPostImages.js?ver=12.7.8"></script>
+<script id="tdSocialSharing-js" src="https://www.linux.com/wp-content/plugins/td-composer/legacy/Newspaper/js/tdSocialSharing.js?ver=12.7.8"></script>
+<script id="tdModalPostImages-js" src="https://www.linux.com/wp-content/plugins/td-composer/legacy/Newspaper/js/tdModalPostImages.js?ver=12.7.8"></script>
+<script id="wp-emoji-settings" type="application/json">
+{"baseUrl":"https://s.w.org/images/core/emoji/17.0.2/72x72/","ext":".png","svgUrl":"https://s.w.org/images/core/emoji/17.0.2/svg/","svgExt":".svg","source":{"concatemoji":"https://www.linux.com/wp-includes/js/wp-emoji-release.min.js?ver=7.1.3"}}
+</script>
+<script type="module">
+/*! This file is auto-generated */
+var e="script#wp-emoji-settings",t=document.querySelector(e);if(!(t instanceof HTMLScriptElement))throw new Error("Element missing: "+e);const r=JSON.parse(t.text),s=(window._wpemojiSettings=r,"wpEmojiSettingsSupports"),o=["flag","emoji"];function i(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(s,JSON.stringify(t))}catch(e){}}function c(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0);const r=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);return t.every((e,t)=>e===r[t])}function p(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var n=e.getImageData(16,16,1,1);for(let e=0;e<n.data.length;e++)if(0!==n.data[e])return!1;return!0}function u(e,t,n,r){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!r(e,"\ud83e\u1fac8")}return!1}function f(e,t,n,r){let a;const s=(a="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):document.createElement("canvas")).getContext("2d",{willReadFrequently:!0}),o=(s.textBaseline="top",s.font="600 32px Arial",{});return e.forEach(e=>{o[e]=t(s,e,n,r)}),o}function a(e){var t=document.createElement("script");t.src=e,t.defer=!0,document.head.appendChild(t)}r.supports={everything:!0,everythingExceptFlag:!0},new Promise(t=>{let n=function(){try{var e=JSON.parse(sessionStorage.getItem(s));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(o),u.toString(),c.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"});const a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=e=>{i(n=e.data),a.terminate(),t(n)})}catch(e){}i(n=f(o,u,c,p))}t(n)}).then(e=>{for(const n in e)r.supports[n]=e[n],r.supports.everything=r.supports.everything&&r.supports[n],"flag"!==n&&(r.supports.everythingExceptFlag=r.supports.everythingExceptFlag&&r.supports[n]);var t;r.supports.everythingExceptFlag=r.supports.everythingExceptFlag&&!r.supports.flag,r.supports.everything||((t=r.source||{}).concatemoji?a(t.concatemoji):t.wpemoji&&t.twemoji&&(a(t.twemoji),a(t.wpemoji)))});
+//# sourceURL=https://www.linux.com/wp-includes/js/wp-emoji-loader.min.js
+</script>
+
+
+<script type="text/javascript" src="https://www.linux.com/wp-content/plugins/td-composer/legacy/Newspaper/js/tdToTop.js?ver=12.7.8" id="tdToTop-js"></script>
+
+<script type="text/javascript" src="https://www.linux.com/wp-content/plugins/td-composer/legacy/Newspaper/js/tdLogin.js?ver=12.7.8" id="tdLogin-js"></script>
+
+<script type="text/javascript" src="https://www.linux.com/wp-content/plugins/td-composer/legacy/Newspaper/js/tdMenu.js?ver=12.7.8" id="tdMenu-js"></script>
+
+<script type="text/javascript" src="https://www.linux.com/wp-content/plugins/td-composer/legacy/Newspaper/js/tdAjaxSearch.js?ver=12.7.8" id="tdAjaxSearch-js"></script>
+<!-- JS generated by theme -->
+
+<script type="text/javascript" id="td-generated-footer-js">
+    
+</script>
+
+
+<script>var td_res_context_registered_atts=[];</script>
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"981d6c8a9f","applicationID":"176909146","transactionName":"ZwZWMhNZXxcFABFaXF5MdQUVUV4KSxMEVFY=","queueTime":0,"applicationTime":212,"atts":"S0FVRFtDTBk=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>
+<!-- plugin=object-cache-pro client=phpredis metric#hits=3255 metric#misses=10 metric#hit-ratio=99.7 metric#bytes=757388 metric#prefetches=115 metric#store-reads=22 metric#store-writes=5 metric#store-hits=126 metric#store-misses=0 metric#sql-queries=7 metric#ms-total=209.31 metric#ms-cache=29.55 metric#ms-cache-avg=1.1364 metric#ms-cache-ratio=14.1 -->
